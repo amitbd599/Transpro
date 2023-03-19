@@ -1,6 +1,26 @@
 import React from "react";
-
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Slider from "react-slick";
 const FeatureOne = () => {
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return <FaArrowLeft className={className} onClick={onClick} />;
+  }
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return <FaArrowRight className={className} onClick={onClick} />;
+  }
+  const settings = {
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    initialSlide: 2,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
   return (
     <>
       {/* feature area start */}
@@ -25,42 +45,56 @@ const FeatureOne = () => {
             </div>
           </div>
           <div className='feature-slider owl-carousel'>
-            <div className='item'>
-              <div className='feature-wrap bg-pink'>
-                <div className='icon'>
-                  <img src='assets/img/icon/feature-1.png' alt='img' />
+            <Slider {...settings}>
+              <div className='item'>
+                <div className='feature-wrap bg-pink'>
+                  <div className='icon'>
+                    <img src='assets/img/icon/feature-1.png' alt='img' />
+                  </div>
+                  <h5>TRANSPARENT PRICING</h5>
+                  <p>
+                    Globally initiate resource maximizing total linkage via
+                    enabled process improvements.
+                  </p>
                 </div>
-                <h5>TRANSPARENT PRICING</h5>
-                <p>
-                  Globally initiate resource maximizing total linkage via
-                  enabled process improvements.
-                </p>
               </div>
-            </div>
-            <div className='item'>
-              <div className='feature-wrap bg-ash'>
-                <div className='icon'>
-                  <img src='assets/img/icon/feature-2.png' alt='img' />
+              <div className='item'>
+                <div className='feature-wrap bg-ash'>
+                  <div className='icon'>
+                    <img src='assets/img/icon/feature-2.png' alt='img' />
+                  </div>
+                  <h5>ONLINE TRACKING</h5>
+                  <p>
+                    Globally initiate resource maximizing total linkage via
+                    enabled process improvements.
+                  </p>
                 </div>
-                <h5>ONLINE TRACKING</h5>
-                <p>
-                  Globally initiate resource maximizing total linkage via
-                  enabled process improvements.
-                </p>
               </div>
-            </div>
-            <div className='item'>
-              <div className='feature-wrap bg-sky'>
-                <div className='icon'>
-                  <img src='assets/img/icon/feature-3.png' alt='img' />
+              <div className='item'>
+                <div className='feature-wrap bg-sky'>
+                  <div className='icon'>
+                    <img src='assets/img/icon/feature-3.png' alt='img' />
+                  </div>
+                  <h5>WAREHOUSE STORAGE</h5>
+                  <p>
+                    Globally initiate resource maximizing total linkage via
+                    enabled process improvements.
+                  </p>
                 </div>
-                <h5>WAREHOUSE STORAGE</h5>
-                <p>
-                  Globally initiate resource maximizing total linkage via
-                  enabled process improvements.
-                </p>
               </div>
-            </div>
+              <div className='item'>
+                <div className='feature-wrap bg-ash'>
+                  <div className='icon'>
+                    <img src='assets/img/icon/feature-2.png' alt='img' />
+                  </div>
+                  <h5>ONLINE TRACKING</h5>
+                  <p>
+                    Globally initiate resource maximizing total linkage via
+                    enabled process improvements.
+                  </p>
+                </div>
+              </div>
+            </Slider>
           </div>
         </div>
       </div>
