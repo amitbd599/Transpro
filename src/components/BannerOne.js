@@ -17,7 +17,8 @@ const BannerOne = () => {
           <Slider {...settings}>
             <div
               className='item'
-              style={{ background: "url(~/assets/img/banner/1.png)" }}
+              // style={{ background: "url(~/assets/img/banner/1.png)" }}
+              style={{ backgroundImage: 'url("./assets/img/banner/1.png")' }}
             >
               <div className='container'>
                 <div className='row'>
@@ -53,7 +54,8 @@ const BannerOne = () => {
             </div>
             <div
               className='item'
-              style={{ background: "url(assets/img/banner/2.png)" }}
+              // style={{ background: "url(assets/img/banner/2.png)" }}
+              style={{ backgroundImage: 'url("./assets/img/banner/1.png")' }}
             >
               <div className='container'>
                 <div className='row'>
