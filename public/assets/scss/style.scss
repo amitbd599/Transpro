@@ -47,9 +47,8 @@ Version: 2.0.0
 @import "global/_common";
 @import "global/_animate";
 
-
 //== Pages
-//== Sections 
+//== Sections
 @import "sections/_section-title";
 @import "sections/_navbar";
 @import "sections/_search";
@@ -60,3 +59,4 @@ Version: 2.0.0
 @import "sections/_blog";
 @import "sections/_sectionbg";
 @import "sections/_footer";
+@import "sections/_responsive";

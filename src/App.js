@@ -20,7 +20,7 @@ function App() {
         <Route exact path='/' element={<Demo />} />
         <Route exact path='/index-1' element={<HomeOne />} />
       </Routes>
-      <ScrollToTop smooth color='#246BFD' />
+      <ScrollToTop smooth color='#FA4318' />
     </BrowserRouter>
   );
 }

@@ -1,0 +1,93 @@
+import React from "react";
+
+const PortfolioOne = () => {
+  return (
+    <>
+      {/* portfolio area start */}
+      <div
+        className='portfolio-area pd-top-115'
+        style={{ background: "url(assets/img/portfolio/bg.png)" }}
+      >
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-8'>
+              <div className='section-title style-white'>
+                <h4 className='subtitle style-2'>OUR PORTFOLIO</h4>
+                <h2 className='title'>LET'S CHECK OUT OUR ALL PORTFOLIO</h2>
+                <p className='content'>
+                  Dramatically enhance interactive metrics for reliable
+                  services. Proactively unleash fully researched e-commerce.
+                  Compellingly synthesize innovative leadership.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className='swiper-container'>
+            {/* Additional required wrapper */}
+            <div className='swiper-wrapper'>
+              {/* Slides */}
+              <div className='swiper-slide'>
+                <div className='single-portfolio-wrap'>
+                  <div className='thumb'>
+                    <img src='assets/img/portfolio/1.png' alt='img' />
+                  </div>
+                  <div className='portfolio-details'>
+                    <div className='details'>
+                      <p>Logistics Transportation</p>
+                      <h4>SPECIALIST TRANSPORT SERVICES.</h4>
+                    </div>
+                    <a href='#' className='icon'>
+                      <i className='fa fa-plus' />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className='swiper-slide'>
+                <div className='single-portfolio-wrap'>
+                  <div className='thumb'>
+                    <img src='assets/img/portfolio/2.png' alt='img' />
+                  </div>
+                  <div className='portfolio-details'>
+                    <div className='details'>
+                      <p>Logistics Transportation</p>
+                      <h4>SPECIALIST TRANSPORT SERVICES.</h4>
+                    </div>
+                    <a href='#' className='icon'>
+                      <i className='fa fa-plus' />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className='swiper-slide'>
+                <div className='single-portfolio-wrap'>
+                  <div className='thumb'>
+                    <img src='assets/img/portfolio/3.png' alt='img' />
+                  </div>
+                  <div className='portfolio-details'>
+                    <div className='details'>
+                      <p>Logistics Transportation</p>
+                      <h4>SPECIALIST TRANSPORT SERVICES.</h4>
+                    </div>
+                    <a href='#' className='icon'>
+                      <i className='fa fa-plus' />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* If we need navigation buttons */}
+            <div className='swiper-button-prev button'>
+              <img src='assets/img/icon/left-arrow.png' alt='img' />
+            </div>
+            <div className='swiper-button-next button'>
+              <img src='assets/img/icon/right-arrow.png' alt='img' />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* portfolio area end */}
+    </>
+  );
+};
+
+export default PortfolioOne;
