@@ -7,7 +7,15 @@ import {
   FaRegClock,
   FaTwitter,
 } from "react-icons/fa";
+import { useSelector } from "react-redux";
+import { SetSearchPopUp } from "../redux/stateSlice/clickActionSlice";
+import store from "../redux/store/store";
+
 const NavbarOne = () => {
+  const searchPopUp = useSelector((state) => state.clickAction.searchPopUp);
+  const actionSearch = () => {
+    store.dispatch(SetSearchPopUp(!searchPopUp));
+  };
   return (
     <>
       {/* navbar start */}
@@ -94,7 +102,7 @@ const NavbarOne = () => {
             </div>
             <div className='nav-left-part'></div>
             <div className='nav-right-part nav-right-part-mobile'>
-              <a className='search-bar-btn' href='#'>
+              <span className='search-bar-btn' onClick={actionSearch}>
                 <svg
                   width={16}
                   height={16}
@@ -107,7 +115,7 @@ const NavbarOne = () => {
                     fill='#080C24'
                   />
                 </svg>
-              </a>
+              </span>
               <a className='btn btn-base' href='contact.html'>
                 <span></span> Get A Quote
               </a>
@@ -194,7 +202,7 @@ const NavbarOne = () => {
               </ul>
             </div>
             <div className='nav-right-part nav-right-part-desktop'>
-              <a className='search-bar-btn' href='#'>
+              <span className='search-bar-btn' onClick={actionSearch}>
                 <svg
                   width={16}
                   height={16}
@@ -207,7 +215,7 @@ const NavbarOne = () => {
                     fill='#080C24'
                   />
                 </svg>
-              </a>
+              </span>
               <a className='btn btn-base' href='contact.html'>
                 <span></span> Get A Quote
               </a>
