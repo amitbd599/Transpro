@@ -1,4 +1,5 @@
 import React from "react";
+import { FaPhoneAlt } from "react-icons/fa";
 
 const ContactOne = () => {
   return (
@@ -21,7 +22,7 @@ const ContactOne = () => {
                 </div>
                 <div className='single-cta-wrap'>
                   <div className='icon'>
-                    <i className='fa fa-phone-alt' />
+                    <FaPhoneAlt />
                   </div>
                   <div className='details'>
                     <h6>Have Any Question</h6>

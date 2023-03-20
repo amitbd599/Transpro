@@ -617,7 +617,7 @@
   }
 }
 .cta-inner-wrap {
-  //   background: url(../img/contact/bg.png);
+  background: url("~/public/assets/img/contact/bg.png");
   padding: 40px 50px;
 }
 .single-cta-wrap {
@@ -1001,8 +1001,7 @@
   .cta-inner-wrap {
     position: relative;
     .section-title .subtitle.style-2 {
-      // background: url(../img/shape/bg-subtitle.png);
-      //   background: url("~/assets/img/shape/bg-subtitle.png");
+      background: url("~/public/assets/img/shape/bg-subtitle.png");
       background-size: 100% 100%;
       background-position: bottom;
       background-repeat: no-repeat;
