@@ -793,6 +793,102 @@
   .section-title {
     margin-bottom: 50px;
   }
+  .slick-slider {
+    .slick-slide {
+      transition: $transition;
+      .single-portfolio-wrap {
+        z-index: 9;
+        transition: $transition;
+        margin: 84px 0;
+        position: relative;
+        .portfolio-details {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: -webkit-fill-available;
+          background: #fff;
+          border-radius: 5px;
+          margin: 20px;
+          padding: 20px 23px 16px 22px;
+          display: flex;
+          align-items: center;
+          opacity: 0;
+          transition: $transition;
+          .details {
+            p {
+              font-weight: 500;
+              font-size: 10px;
+              line-height: initial;
+              color: var(--main-color);
+              margin-bottom: 9px;
+            }
+            h4 {
+              font-size: 17px;
+              margin-bottom: 0;
+            }
+          }
+          .icon {
+            height: 28px;
+            width: 28px;
+            background: var(--main-color);
+            border-radius: 5px;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            margin-left: auto;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+      &.slick-center {
+        position: relative;
+        z-index: 9;
+        transform: scale(1.7);
+        .portfolio-details {
+          opacity: 1;
+        }
+      }
+    }
+    .slick-next {
+      left: auto;
+      right: 205px;
+      z-index: 9;
+      top: -85px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #fff;
+      color: var(--main-color);
+      padding: 18px;
+      box-shadow: 0px 8px 20px rgba(7, 36, 95, 0.15);
+      transition: all 0.2s linear;
+      &:hover {
+        background: var(--main-color);
+        color: #fff;
+      }
+    }
+    .slick-prev {
+      left: auto;
+      right: 125px;
+      z-index: 9;
+      top: -85px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #fff;
+      color: var(--main-color);
+      padding: 18px;
+      box-shadow: 0px 8px 20px rgba(7, 36, 95, 0.15);
+      transition: all 0.2s linear;
+      &:hover {
+        background: var(--main-color);
+        color: #fff;
+      }
+    }
+  }
 }
 .swiper-container {
   margin: -305px -93px 253px;

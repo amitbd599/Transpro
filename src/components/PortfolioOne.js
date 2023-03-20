@@ -1,6 +1,29 @@
 import React from "react";
+import { FaArrowLeft, FaArrowRight, FaPlus } from "react-icons/fa";
+import Slider from "react-slick";
 
 const PortfolioOne = () => {
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return <FaArrowLeft className={className} onClick={onClick} />;
+  }
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return <FaArrowRight className={className} onClick={onClick} />;
+  }
+  const settings = {
+    dots: false,
+    arrows: true,
+    speed: 1000,
+    initialSlide: 1,
+    autoplaySpeed: 5000,
+    className: "center",
+    centerMode: true,
+    centerPadding: "0px",
+    slidesToShow: 3,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
   return (
     <>
       {/* portfolio area start */}
@@ -26,62 +49,80 @@ const PortfolioOne = () => {
             {/* Additional required wrapper */}
             <div className='swiper-wrapper'>
               {/* Slides */}
-              <div className='swiper-slide'>
-                <div className='single-portfolio-wrap'>
-                  <div className='thumb'>
-                    <img src='assets/img/portfolio/1.png' alt='img' />
-                  </div>
-                  <div className='portfolio-details'>
-                    <div className='details'>
-                      <p>Logistics Transportation</p>
-                      <h4>SPECIALIST TRANSPORT SERVICES.</h4>
+              <Slider {...settings}>
+                <div className='swiper-slide'>
+                  <div className='single-portfolio-wrap'>
+                    <div className='thumb'>
+                      <img src='assets/img/portfolio/1.png' alt='img' />
                     </div>
-                    <a href='#' className='icon'>
-                      <i className='fa fa-plus' />
-                    </a>
+                    <div className='portfolio-details'>
+                      <div className='details'>
+                        <p>Logistics Transportation</p>
+                        <h4>SPECIALIST TRANSPORT SERVICES.</h4>
+                      </div>
+                      <a href='#' className='icon'>
+                        <FaPlus />
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className='swiper-slide'>
-                <div className='single-portfolio-wrap'>
-                  <div className='thumb'>
-                    <img src='assets/img/portfolio/2.png' alt='img' />
-                  </div>
-                  <div className='portfolio-details'>
-                    <div className='details'>
-                      <p>Logistics Transportation</p>
-                      <h4>SPECIALIST TRANSPORT SERVICES.</h4>
+                <div className='swiper-slide'>
+                  <div className='single-portfolio-wrap'>
+                    <div className='thumb'>
+                      <img src='assets/img/portfolio/2.png' alt='img' />
                     </div>
-                    <a href='#' className='icon'>
-                      <i className='fa fa-plus' />
-                    </a>
+                    <div className='portfolio-details'>
+                      <div className='details'>
+                        <p>Logistics Transportation</p>
+                        <h4>SPECIALIST TRANSPORT SERVICES.</h4>
+                      </div>
+                      <a href='#' className='icon'>
+                        <FaPlus />
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className='swiper-slide'>
-                <div className='single-portfolio-wrap'>
-                  <div className='thumb'>
-                    <img src='assets/img/portfolio/3.png' alt='img' />
-                  </div>
-                  <div className='portfolio-details'>
-                    <div className='details'>
-                      <p>Logistics Transportation</p>
-                      <h4>SPECIALIST TRANSPORT SERVICES.</h4>
+                <div className='swiper-slide'>
+                  <div className='single-portfolio-wrap'>
+                    <div className='thumb'>
+                      <img src='assets/img/portfolio/3.png' alt='img' />
                     </div>
-                    <a href='#' className='icon'>
-                      <i className='fa fa-plus' />
-                    </a>
+                    <div className='portfolio-details'>
+                      <div className='details'>
+                        <p>Logistics Transportation</p>
+                        <h4>SPECIALIST TRANSPORT SERVICES.</h4>
+                      </div>
+                      <a href='#' className='icon'>
+                        <FaPlus />
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
+                <div className='swiper-slide'>
+                  <div className='single-portfolio-wrap'>
+                    <div className='thumb'>
+                      <img src='assets/img/portfolio/2.png' alt='img' />
+                    </div>
+                    <div className='portfolio-details'>
+                      <div className='details'>
+                        <p>Logistics Transportation</p>
+                        <h4>SPECIALIST TRANSPORT SERVICES.</h4>
+                      </div>
+                      <a href='#' className='icon'>
+                        <FaPlus />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </Slider>
             </div>
-            {/* If we need navigation buttons */}
+            {/* If we need navigation buttons
             <div className='swiper-button-prev button'>
               <img src='assets/img/icon/left-arrow.png' alt='img' />
             </div>
             <div className='swiper-button-next button'>
               <img src='assets/img/icon/right-arrow.png' alt='img' />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
