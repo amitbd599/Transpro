@@ -102,7 +102,10 @@ const NavbarOne = () => {
             </div>
             <div className='nav-left-part'></div>
             <div className='nav-right-part nav-right-part-mobile'>
-              <span className='search-bar-btn' onClick={actionSearch}>
+              <span
+                className='search-bar-btn cursor-pointer'
+                onClick={actionSearch}
+              >
                 <svg
                   width={16}
                   height={16}
@@ -202,7 +205,10 @@ const NavbarOne = () => {
               </ul>
             </div>
             <div className='nav-right-part nav-right-part-desktop'>
-              <span className='search-bar-btn' onClick={actionSearch}>
+              <span
+                className='search-bar-btn cursor-pointer p-1'
+                onClick={actionSearch}
+              >
                 <svg
                   width={16}
                   height={16}

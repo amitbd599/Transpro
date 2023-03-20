@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 
 const ServiceOne = () => {
   return (
@@ -44,7 +45,7 @@ const ServiceOne = () => {
                     <a className='read-more-text' href='service-details.html'>
                       READ MORE{" "}
                       <span>
-                        <i className='fa fa-arrow-right' />
+                        <FaArrowRight />
                       </span>
                     </a>
                   </div>
@@ -72,7 +73,7 @@ const ServiceOne = () => {
                     <a className='read-more-text' href='service-details.html'>
                       READ MORE{" "}
                       <span>
-                        <i className='fa fa-arrow-right' />
+                        <FaArrowRight />
                       </span>
                     </a>
                   </div>
@@ -100,7 +101,7 @@ const ServiceOne = () => {
                     <a className='read-more-text' href='service-details.html'>
                       READ MORE{" "}
                       <span>
-                        <i className='fa fa-arrow-right' />
+                        <FaArrowRight />
                       </span>
                     </a>
                   </div>

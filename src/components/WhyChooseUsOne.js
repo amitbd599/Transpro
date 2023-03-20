@@ -1,4 +1,5 @@
 import React from "react";
+import { FaPlay } from "react-icons/fa";
 
 const WhyChooseUsOne = () => {
   return (
@@ -20,7 +21,7 @@ const WhyChooseUsOne = () => {
                   href='https://www.youtube.com/embed/Wimkqo8gDZ0'
                   data-effect='mfp-zoom-in'
                 >
-                  <i className='fa fa-play' />
+                  <FaPlay />
                 </a>
               </div>
             </div>
