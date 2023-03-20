@@ -1,4 +1,12 @@
 import React from "react";
+import {
+  FaArrowRight,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaPaperPlane,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 const FooterOne = () => {
   return (
@@ -7,7 +15,7 @@ const FooterOne = () => {
       <footer className='footer-area'>
         <div
           className='footer-top'
-          style={{ backgroundImage: "url(assets/img/footer/bg.png)" }}
+          style={{ backgroundImage: 'url("./assets/img/footer/bg.png")' }}
         >
           <div className='container'>
             <div className='row justify-content-center'>
@@ -66,22 +74,22 @@ const FooterOne = () => {
                   <ul className='social-media style-border'>
                     <li>
                       <a href='#'>
-                        <i className='fab fa-facebook-f' />
+                        <FaFacebookF />
                       </a>
                     </li>
                     <li>
                       <a href='#'>
-                        <i className='fab fa-twitter' />
+                        <FaTwitter />
                       </a>
                     </li>
                     <li>
                       <a href='#'>
-                        <i className='fab fa-whatsapp' />
+                        <FaWhatsapp />
                       </a>
                     </li>
                     <li>
                       <a href='#'>
-                        <i className='fab fa-linkedin-in' />
+                        <FaLinkedinIn />
                       </a>
                     </li>
                   </ul>
@@ -94,28 +102,28 @@ const FooterOne = () => {
                 <ul>
                   <li>
                     <a href='about.html'>
-                      <i className='fa fa-arrow-right' /> About Us
+                      <FaArrowRight /> About Us
                     </a>
                   </li>
                   <li>
                     <a href='service.html'>
-                      <i className='fa fa-arrow-right' /> Services
+                      <FaArrowRight /> Services
                     </a>
                   </li>
                   <li>
                     <a href='#'>
-                      <i className='fa fa-arrow-right' /> Portfolio
+                      <FaArrowRight /> Portfolio
                     </a>
                   </li>
                   <li>
                     <a href='blog.html'>
-                      <i className='fa fa-arrow-right' />
+                      <FaArrowRight />
                       Blog
                     </a>
                   </li>
                   <li>
                     <a href='contact.html'>
-                      <i className='fa fa-arrow-right' /> Contact Us
+                      <FaArrowRight /> Contact Us
                     </a>
                   </li>
                 </ul>
@@ -127,27 +135,27 @@ const FooterOne = () => {
                 <ul>
                   <li>
                     <a href='#'>
-                      <i className='fa fa-arrow-right' /> Air Freight
+                      <FaArrowRight /> Air Freight
                     </a>
                   </li>
                   <li>
                     <a href='#'>
-                      <i className='fa fa-arrow-right' /> Ocean Freight
+                      <FaArrowRight /> Ocean Freight
                     </a>
                   </li>
                   <li>
                     <a href='#'>
-                      <i className='fa fa-arrow-right' /> Railway Freight
+                      <FaArrowRight /> Railway Freight
                     </a>
                   </li>
                   <li>
                     <a href='#'>
-                      <i className='fa fa-arrow-right' /> Warehousing
+                      <FaArrowRight /> Warehousing
                     </a>
                   </li>
                   <li>
                     <a href='#'>
-                      <i className='fa fa-arrow-right' /> Distribution
+                      <FaArrowRight /> Distribution
                     </a>
                   </li>
                 </ul>
@@ -164,7 +172,7 @@ const FooterOne = () => {
                 <div className='single-subscribe-inner'>
                   <input type='text' placeholder='Email Address' />
                   <a className='btn btn-base' href='#'>
-                    <i className='fa fa-paper-plane' />
+                    <FaPaperPlane />
                   </a>
                 </div>
               </div>

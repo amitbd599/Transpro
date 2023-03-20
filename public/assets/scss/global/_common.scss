@@ -472,6 +472,9 @@
         background: transparent;
         border: 1px solid #ffffff;
         color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         i,
         svg {
           margin-right: 0;
