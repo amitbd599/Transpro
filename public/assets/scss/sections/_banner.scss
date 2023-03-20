@@ -86,6 +86,23 @@
     }
   }
   .slick-slider {
+    .slick-active {
+      .b-animate-1 {
+        animation: 1.5s 0.2s bannerFadeInLeft both;
+      }
+      .b-animate-2 {
+        animation: 1.5s 0.4s bannerFadeInLeft both;
+      }
+      .b-animate-3 {
+        animation: 1.5s 0.6s bannerFadeInLeft both;
+      }
+      .b-animate-4 {
+        animation: 1.5s 0.8s bannerFadeInLeft both;
+      }
+      .b-animate-5 {
+        animation: 1.5s 0.9s bannerFadeInLeft both;
+      }
+    }
     .slick-prev {
       left: 10px;
       top: 52%;

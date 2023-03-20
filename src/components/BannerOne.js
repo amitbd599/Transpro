@@ -19,6 +19,9 @@ const BannerOne = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    cssEase: "linear",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
