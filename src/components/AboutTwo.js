@@ -1,4 +1,5 @@
 import React from "react";
+import { FaPlay } from "react-icons/fa";
 
 const AboutTwo = () => {
   return (
@@ -73,13 +74,13 @@ const AboutTwo = () => {
                       <a className='btn btn-base' href='about.html'>
                         DISCOVER MORE
                       </a>
-                      <div className='video-wrap'>
+                      <div className='video-wrap d-flex align-items-center gap-2'>
                         <a
                           className='video-play-btn'
                           href='https://www.youtube.com/embed/Wimkqo8gDZ0'
                           data-effect='mfp-zoom-in'
                         >
-                          <i className='fa fa-play' />
+                          <FaPlay />
                         </a>
                         <span>Watch The Video</span>
                       </div>
