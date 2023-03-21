@@ -319,10 +319,9 @@
     padding: 0 12px;
   }
   .slick-next {
-    left: auto;
-    right: 80px;
+    left: -80px;
     z-index: 9;
-    top: -85px;
+    top: 50%;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -338,9 +337,9 @@
   }
   .slick-prev {
     left: auto;
-    right: 0;
+    right: -80px;
     z-index: 9;
-    top: -85px;
+    top: 50%;
     width: 60px;
     height: 60px;
     border-radius: 50%;
