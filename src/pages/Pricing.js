@@ -1,12 +1,14 @@
 import React from "react";
-import BlogDetailsInner from "../components/BlogDetailsInner";
 import Breadcrumb from "../components/Breadcrumb";
+import ContactOne from "../components/ContactOne";
 import FooterBottomOne from "../components/FooterBottomOne";
 import FooterOne from "../components/FooterOne";
 import NavbarOne from "../components/NavbarOne";
+import PartnerOne from "../components/PartnerOne";
+import PricingOne from "../components/PricingOne";
 import SearchPopup from "../elements/SearchPopup";
 
-const BlogDetails = () => {
+const Pricing = () => {
   return (
     <>
       {/* Search Popup */}
@@ -16,10 +18,21 @@ const BlogDetails = () => {
       <NavbarOne />
 
       {/* Breadcrumb */}
-      <Breadcrumb title={"BLOG DETAILS"} />
+      <Breadcrumb title={"PRICING"} />
 
-      {/* Blog Details Inner */}
-      <BlogDetailsInner />
+      {/* Pricing One */}
+      <PricingOne />
+
+      {/* Contact One */}
+      <div
+        className='call-to-contact-area pd-top-140  mt-0'
+        style={{ background: "#F9F9F9" }}
+      >
+        <ContactOne />
+      </div>
+
+      {/* Partner One */}
+      <PartnerOne />
 
       {/* Footer One */}
       <FooterOne />
@@ -30,4 +43,4 @@ const BlogDetails = () => {
   );
 };
 
-export default BlogDetails;
+export default Pricing;
