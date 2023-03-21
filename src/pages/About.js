@@ -2,9 +2,13 @@ import React from "react";
 import AboutOne from "../components/AboutOne";
 import Breadcrumb from "../components/Breadcrumb";
 import CounterOne from "../components/CounterOne";
+import FooterBottomOne from "../components/FooterBottomOne";
+import FooterOne from "../components/FooterOne";
 import NavbarOne from "../components/NavbarOne";
-import PortfolioOne from "../components/PortfolioOne";
+import PartnerOne from "../components/PartnerOne";
 import SkillOne from "../components/SkillOne";
+import TeamOne from "../components/TeamOne";
+import TestimonialTwo from "../components/TestimonialTwo";
 import VideoAreaOne from "../components/VideoAreaOne";
 import SearchPopup from "../elements/SearchPopup";
 
@@ -27,7 +31,7 @@ const About = () => {
 
       {/* Counter One */}
 
-      <div classname='fact-area' style={{ background: "#f9f9f9" }}>
+      <div className='fact-area' style={{ background: "#f9f9f9" }}>
         <CounterOne />
       </div>
 
@@ -36,6 +40,23 @@ const About = () => {
 
       {/* Video Area One */}
       <VideoAreaOne />
+
+      {/* Team One */}
+      <div className='pd-bottom-80'>
+        <TeamOne />
+      </div>
+
+      {/* Testimonial Two */}
+      <TestimonialTwo />
+
+      {/* Partner One */}
+      <PartnerOne />
+
+      {/* Footer One */}
+      <FooterOne />
+
+      {/* Footer Bottom One */}
+      <FooterBottomOne />
     </>
   );
 };
