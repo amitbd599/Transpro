@@ -9,6 +9,7 @@ import HomeTwo from "./pages/HomeTwo";
 import About from "./pages/About";
 import Service from "./pages/Service";
 import ServiceDetails from "./pages/ServiceDetails";
+import Blog from "./pages/Blog";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -27,6 +28,7 @@ function App() {
         <Route exact path='/about' element={<About />} />
         <Route exact path='/service' element={<Service />} />
         <Route exact path='/service-details' element={<ServiceDetails />} />
+        <Route exact path='/blog' element={<Blog />} />
       </Routes>
       <ScrollToTop smooth color='#FA4318' />
     </BrowserRouter>
