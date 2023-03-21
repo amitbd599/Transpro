@@ -29,7 +29,9 @@ const HomeOne = () => {
       <BannerOne />
 
       {/* Feature One */}
-      <FeatureOne />
+      <div className='faq-area pd-top-120'>
+        <FeatureOne />
+      </div>
 
       {/* About One */}
       <AboutOne />
