@@ -417,15 +417,7 @@
       a {
         color: #fb493d;
       }
-      &:after {
-        position: absolute;
-        left: 0;
-        top: 1px;
-        content: "\f061";
-        color: #fb493d;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 700;
-      }
+
       &:first-child {
         padding-left: 0;
         &:after {
