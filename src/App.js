@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import ScrollToTop from "react-scroll-to-top";
 import HomeTwo from "./pages/HomeTwo";
 import About from "./pages/About";
+import Service from "./pages/Service";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -23,6 +24,7 @@ function App() {
         <Route exact path='/home' element={<HomeOne />} />
         <Route exact path='/home-2' element={<HomeTwo />} />
         <Route exact path='/about' element={<About />} />
+        <Route exact path='/service' element={<Service />} />
       </Routes>
       <ScrollToTop smooth color='#FA4318' />
     </BrowserRouter>

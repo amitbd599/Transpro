@@ -16,9 +16,9 @@ const Breadcrumb = ({ title }) => {
                   <h2 className='page-title'>{title}</h2>
                   <ul className='page-list'>
                     <li>
-                      <a href='home.html'>Home</a>
+                      <a href='home.html'>HOME</a>
                     </li>{" "}
-                    /<li className='ps-0'>About Us</li>
+                    /<li className='ps-0'>{title}</li>
                   </ul>
                 </div>
               </div>

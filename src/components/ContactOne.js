@@ -5,10 +5,7 @@ const ContactOne = () => {
   return (
     <>
       {/*contact-area start*/}
-      <div
-        className='call-to-contact-area pd-top-240'
-        style={{ background: "#F9F9F9" }}
-      >
+      <div>
         <img src='assets/img/contact/1.png' alt='img' />
         <div className='container'>
           <div className='row justify-content-end'>
