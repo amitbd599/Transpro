@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCheckCircle } from "react-icons/fa";
 
 const PricingOne = () => {
   return (
@@ -26,29 +27,28 @@ const PricingOne = () => {
                   <div className='price'>
                     <h2 className='d-inline-block'>60</h2>
                     <sup>$</sup>
-                    <span>/Per Month</span>
+                    <span className='ps-2'>/Per Month</span>
                   </div>
                 </div>
                 <div className='details'>
                   <ul className='single-list-inner'>
                     <li>
-                      <i className='far fa-check-circle' />1 warehouse
+                      <FaCheckCircle />1 warehouse
                     </li>
                     <li>
-                      <i className='far fa-check-circle' />
+                      <FaCheckCircle />
                       Custom business rules
                     </li>
                     <li>
-                      <i className='far fa-check-circle' />
+                      <FaCheckCircle />
                       Real-time rate shopping
                     </li>
                     <li className='unavailable'>
-                      <i className='far fa-check-circle' />
+                      <FaCheckCircle />
                       100 freight shipments
                     </li>
                     <li className='unavailable'>
-                      <i className='far fa-check-circle' /> Any time 24/7 hour
-                      support
+                      <FaCheckCircle /> Any time 24/7 hour support
                     </li>
                   </ul>
                   <a className='btn btn-base' href='#'>
@@ -64,29 +64,28 @@ const PricingOne = () => {
                   <div className='price'>
                     <h2 className='d-inline-block'>100</h2>
                     <sup>$</sup>
-                    <span>/Per Month</span>
+                    <span className='ps-2'>/Per Month</span>
                   </div>
                 </div>
                 <div className='details'>
                   <ul className='single-list-inner'>
                     <li>
-                      <i className='far fa-check-circle' />1 warehouse
+                      <FaCheckCircle />1 warehouse
                     </li>
                     <li>
-                      <i className='far fa-check-circle' />
+                      <FaCheckCircle />
                       Custom business rules
                     </li>
                     <li>
-                      <i className='far fa-check-circle' />
+                      <FaCheckCircle />
                       Real-time rate shopping
                     </li>
                     <li>
-                      <i className='far fa-check-circle' />
+                      <FaCheckCircle />
                       100 freight shipments
                     </li>
                     <li className='unavailable'>
-                      <i className='far fa-check-circle' /> Any time 24/7 hour
-                      support
+                      <FaCheckCircle /> Any time 24/7 hour support
                     </li>
                   </ul>
                   <a className='btn btn-base' href='#'>
@@ -102,29 +101,28 @@ const PricingOne = () => {
                   <div className='price'>
                     <h2 className='d-inline-block'>160</h2>
                     <sup>$</sup>
-                    <span>/Per Month</span>
+                    <span className='ps-2'>/Per Month</span>
                   </div>
                 </div>
                 <div className='details'>
                   <ul className='single-list-inner'>
                     <li>
-                      <i className='far fa-check-circle' />1 warehouse
+                      <FaCheckCircle />1 warehouse
                     </li>
                     <li>
-                      <i className='far fa-check-circle' />
+                      <FaCheckCircle />
                       Custom business rules
                     </li>
                     <li>
-                      <i className='far fa-check-circle' />
+                      <FaCheckCircle />
                       Real-time rate shopping
                     </li>
                     <li>
-                      <i className='far fa-check-circle' />
+                      <FaCheckCircle />
                       100 freight shipments
                     </li>
                     <li>
-                      <i className='far fa-check-circle' /> Any time 24/7 hour
-                      support
+                      <FaCheckCircle /> Any time 24/7 hour support
                     </li>
                   </ul>
                   <a className='btn btn-base' href='#'>
