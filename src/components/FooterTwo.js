@@ -1,4 +1,15 @@
 import React from "react";
+import {
+  FaArrowRight,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaMapMarkerAlt,
+  FaMobileAlt,
+  FaRegEnvelopeOpen,
+  FaRegPaperPlane,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 const FooterTwo = () => {
   return (
@@ -20,7 +31,7 @@ const FooterTwo = () => {
                     <div className='single-subscribe-inner'>
                       <input type='text' placeholder='Email Address' />
                       <a className='btn btn-base' href='#'>
-                        <i className='fa fa-paper-plane' />
+                        <FaRegPaperPlane />
                       </a>
                     </div>
                   </div>
@@ -43,22 +54,22 @@ const FooterTwo = () => {
                   <ul className='social-media style-border'>
                     <li>
                       <a href='#'>
-                        <i className='fab fa-facebook-f' />
+                        <FaFacebookF />
                       </a>
                     </li>
                     <li>
                       <a href='#'>
-                        <i className='fab fa-twitter' />
+                        <FaTwitter />
                       </a>
                     </li>
                     <li>
                       <a href='#'>
-                        <i className='fab fa-whatsapp' />
+                        <FaWhatsapp />
                       </a>
                     </li>
                     <li>
                       <a href='#'>
-                        <i className='fab fa-linkedin-in' />
+                        <FaLinkedinIn />
                       </a>
                     </li>
                   </ul>
@@ -71,28 +82,28 @@ const FooterTwo = () => {
                 <ul>
                   <li>
                     <a href='about.html'>
-                      <i className='fa fa-arrow-right' /> About Us
+                      <FaArrowRight /> About Us
                     </a>
                   </li>
                   <li>
                     <a href='service.html'>
-                      <i className='fa fa-arrow-right' /> Services
+                      <FaArrowRight /> Services
                     </a>
                   </li>
                   <li>
                     <a href='#'>
-                      <i className='fa fa-arrow-right' /> Portfolio
+                      <FaArrowRight /> Portfolio
                     </a>
                   </li>
                   <li>
                     <a href='blog.html'>
-                      <i className='fa fa-arrow-right' />
+                      <FaArrowRight />
                       Blog
                     </a>
                   </li>
                   <li>
                     <a href='contact.html'>
-                      <i className='fa fa-arrow-right' /> Contact Us
+                      <FaArrowRight /> Contact Us
                     </a>
                   </li>
                 </ul>
@@ -104,27 +115,27 @@ const FooterTwo = () => {
                 <ul>
                   <li>
                     <a href='#'>
-                      <i className='fa fa-arrow-right' /> Air Freight
+                      <FaArrowRight /> Air Freight
                     </a>
                   </li>
                   <li>
                     <a href='#'>
-                      <i className='fa fa-arrow-right' /> Ocean Freight
+                      <FaArrowRight /> Ocean Freight
                     </a>
                   </li>
                   <li>
                     <a href='#'>
-                      <i className='fa fa-arrow-right' /> Railway Freight
+                      <FaArrowRight /> Railway Freight
                     </a>
                   </li>
                   <li>
                     <a href='#'>
-                      <i className='fa fa-arrow-right' /> Warehousing
+                      <FaArrowRight /> Warehousing
                     </a>
                   </li>
                   <li>
                     <a href='#'>
-                      <i className='fa fa-arrow-right' /> Distribution
+                      <FaArrowRight /> Distribution
                     </a>
                   </li>
                 </ul>
@@ -135,7 +146,7 @@ const FooterTwo = () => {
                 <h4 className='widget-title'>CONTACT NOW</h4>
                 <div className='single-contact-inner'>
                   <div className='icon'>
-                    <i className='fa fa-map-marker-alt' />
+                    <FaMapMarkerAlt />
                   </div>
                   <div className='details'>
                     <p>2245 Gilbert Ave, Cincinnati, OH</p>
@@ -144,7 +155,7 @@ const FooterTwo = () => {
                 </div>
                 <div className='single-contact-inner'>
                   <div className='icon'>
-                    <i className='fas fa-mobile-alt' />
+                    <FaMobileAlt />
                   </div>
                   <div className='details'>
                     <p>+1 800-226-4054</p>
@@ -153,7 +164,7 @@ const FooterTwo = () => {
                 </div>
                 <div className='single-contact-inner'>
                   <div className='icon'>
-                    <i className='far fa-envelope' />
+                    <FaRegEnvelopeOpen />
                   </div>
                   <div className='details'>
                     <p>info.logic@transpro.com</p>

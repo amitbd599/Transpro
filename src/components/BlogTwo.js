@@ -1,4 +1,5 @@
 import React from "react";
+import { FaRegCalendarAlt, FaUserAlt } from "react-icons/fa";
 
 const BlogTwo = () => {
   return (
@@ -32,14 +33,14 @@ const BlogTwo = () => {
                   </h4>
                   <ul className='blog-meta'>
                     <li>
-                      <i className='fa fa-user' /> By{" "}
+                      <FaUserAlt /> By{" "}
                       <a className='ms-1' href='#'>
                         {" "}
                         Admin
                       </a>
                     </li>
                     <li>
-                      <i className='fas fa-calendar-alt' /> 01 July, 2022
+                      <FaRegCalendarAlt /> 01 July, 2022
                     </li>
                   </ul>
                   <a className='read-more-text' href='blog-details.html'>
@@ -61,14 +62,14 @@ const BlogTwo = () => {
                   </h4>
                   <ul className='blog-meta'>
                     <li>
-                      <i className='fa fa-user' /> By{" "}
+                      <FaUserAlt /> By{" "}
                       <a className='ms-1' href='#'>
                         {" "}
                         Admin
                       </a>
                     </li>
                     <li>
-                      <i className='fas fa-calendar-alt' /> 01 July, 2022
+                      <FaRegCalendarAlt /> 01 July, 2022
                     </li>
                   </ul>
                   <a className='read-more-text' href='blog-details.html'>
@@ -90,14 +91,14 @@ const BlogTwo = () => {
                   </h4>
                   <ul className='blog-meta'>
                     <li>
-                      <i className='fa fa-user' /> By{" "}
+                      <FaUserAlt /> By{" "}
                       <a className='ms-1' href='#'>
                         {" "}
                         Admin
                       </a>
                     </li>
                     <li>
-                      <i className='fas fa-calendar-alt' /> 01 July, 2022
+                      <FaRegCalendarAlt /> 01 July, 2022
                     </li>
                   </ul>
                   <a className='read-more-text' href='blog-details.html'>
