@@ -37,7 +37,7 @@ const NavbarOne = () => {
       <header className='navbar-area'>
         <div className='navbar-top'>
           <Link className='main-logo' to='/home'>
-            <div className='logo d-none d-lg-block'>
+            <div className='logo d-none d-xl-block'>
               <img src='/assets/img/logo.png' alt='img' />
             </div>
           </Link>
