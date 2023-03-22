@@ -62,7 +62,9 @@ const HomeTwo = () => {
           <VideoAreaOne />
 
           {/* Faq One */}
-          <FaqOne />
+          <div className='faq-area pd-top-120'>
+            <FaqOne />
+          </div>
 
           {/* Blog Two */}
           <BlogTwo />

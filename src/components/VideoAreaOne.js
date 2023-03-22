@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaPhoneAlt, FaPlay } from "react-icons/fa";
-
+import ModalVideo from "react-modal-video";
 const VideoAreaOne = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
       {/*video-area start*/}
@@ -9,16 +10,17 @@ const VideoAreaOne = () => {
         className='video-area pd-top-120 pd-bottom-120'
         style={{ background: "#080C24" }}
       >
-        <div className='video-thumb-wrap'>
+        <div className='video-thumb-wrap '>
           <img src='assets/img/video/1.png' alt='img' />
-          <a
-            className='video-play-btn'
-            href='https://www.youtube.com/embed/Wimkqo8gDZ0'
+          <span
+            className='video-play-btn cursor-pointer'
             data-effect='mfp-zoom-in'
+            onClick={() => setOpen(true)}
           >
             <FaPlay />
-          </a>
+          </span>
         </div>
+
         <div className='container'>
           <div className='row'>
             <div className='col-xl-6 col-lg-7'>
@@ -50,6 +52,13 @@ const VideoAreaOne = () => {
         </div>
       </div>
       {/*video-area end*/}
+      <ModalVideo
+        channel='youtube'
+        autoplay
+        isOpen={isOpen}
+        videoId='XM6kTQPzzpQ'
+        onClose={() => setOpen(false)}
+      />
     </>
   );
 };
