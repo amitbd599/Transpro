@@ -1,31 +1,37 @@
-import React from "react";
-import Breadcrumb from "../components/Breadcrumb";
-import ContactInner from "../components/ContactInner";
-import FooterBottomOne from "../components/FooterBottomOne";
-import FooterOne from "../components/FooterOne";
-import NavbarOne from "../components/NavbarOne";
-import SearchPopup from "../elements/SearchPopup";
-
+import React, { Fragment, Suspense } from "react";
+import Preloader from "../elements/Preloader";
+const Breadcrumb = React.lazy(() => import("../components/Breadcrumb"));
+const ContactInner = React.lazy(() => import("../components/ContactInner"));
+const FooterBottomOne = React.lazy(() =>
+  import("../components/FooterBottomOne")
+);
+const FooterOne = React.lazy(() => import("../components/FooterOne"));
+const NavbarOne = React.lazy(() => import("../components/NavbarOne"));
+const SearchPopup = React.lazy(() => import("../elements/SearchPopup"));
 const Contact = () => {
   return (
     <>
-      {/* Search Popup */}
-      <SearchPopup />
+      <Fragment>
+        <Suspense fallback={<Preloader />}>
+          {/* Search Popup */}
+          <SearchPopup />
 
-      {/* Navbar One */}
-      <NavbarOne />
+          {/* Navbar One */}
+          <NavbarOne />
 
-      {/* Breadcrumb */}
-      <Breadcrumb title={"CONTACT US"} />
+          {/* Breadcrumb */}
+          <Breadcrumb title={"CONTACT US"} />
 
-      {/* Breadcrumb */}
-      <ContactInner />
+          {/* Breadcrumb */}
+          <ContactInner />
 
-      {/* Footer One */}
-      <FooterOne />
+          {/* Footer One */}
+          <FooterOne />
 
-      {/* Footer Bottom One */}
-      <FooterBottomOne />
+          {/* Footer Bottom One */}
+          <FooterBottomOne />
+        </Suspense>
+      </Fragment>
     </>
   );
 };

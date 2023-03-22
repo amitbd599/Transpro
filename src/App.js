@@ -14,6 +14,7 @@ import BlogDetails from "./pages/BlogDetails";
 import Pricing from "./pages/Pricing";
 import Faq from "./pages/Faq";
 import Contact from "./pages/Contact";
+import RouteScrollToTop from "./elements/RouteScrollToTop";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -25,6 +26,7 @@ function App() {
   }, []);
   return (
     <BrowserRouter>
+      <RouteScrollToTop />
       <Routes>
         <Route exact path='/' element={<Demo />} />
         <Route exact path='/home' element={<HomeOne />} />

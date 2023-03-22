@@ -1,6 +1,7 @@
 import React from "react";
 import { FaPlay } from "react-icons/fa";
-
+import TrackVisibility from "react-on-screen";
+import CountUp from "react-countup";
 const AboutTwo = () => {
   return (
     <>
@@ -29,7 +30,15 @@ const AboutTwo = () => {
                   <div className='exprience-wrap'>
                     <img src='assets/img/about/shape-3.png' alt='img' />
                     <div className='details'>
-                      <h1>22</h1>
+                      <TrackVisibility once>
+                        {({ isVisible }) =>
+                          isVisible && (
+                            <h1>
+                              <CountUp delay={0} start={0} end={22} />
+                            </h1>
+                          )
+                        }
+                      </TrackVisibility>
                       <p>YEARS EXPERIENCE</p>
                     </div>
                   </div>

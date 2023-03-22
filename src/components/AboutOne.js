@@ -1,5 +1,6 @@
 import React from "react";
-
+import TrackVisibility from "react-on-screen";
+import CountUp from "react-countup";
 const AboutOne = () => {
   return (
     <>
@@ -28,7 +29,15 @@ const AboutOne = () => {
                   <div className='exprience-wrap'>
                     <img src='./assets/img/about/shape-3.png' alt='img' />
                     <div className='details'>
-                      <h1>22</h1>
+                      <TrackVisibility once>
+                        {({ isVisible }) =>
+                          isVisible && (
+                            <h1>
+                              <CountUp delay={0} start={0} end={22} />
+                            </h1>
+                          )
+                        }
+                      </TrackVisibility>
                       <p>YEARS EXPERIENCE</p>
                     </div>
                   </div>

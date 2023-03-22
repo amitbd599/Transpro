@@ -1,71 +1,79 @@
-import React from "react";
-import AboutTwo from "../components/AboutTwo";
-import BannerTwo from "../components/BannerTwo";
-import BlogTwo from "../components/BlogTwo";
-import CounterTwo from "../components/CounterTwo";
-import FaqOne from "../components/FaqOne";
-import FooterBottomOne from "../components/FooterBottomOne";
-import FooterTwo from "../components/FooterTwo";
-import NavbarTwo from "../components/NavbarTwo";
-import PartnerTwo from "../components/PartnerTwo";
-import PricingOne from "../components/PricingOne";
-import RequestQuoteOne from "../components/RequestQuoteOne";
-import ServiceTwo from "../components/ServiceTwo";
-import TestimonialTwo from "../components/TestimonialTwo";
-import VideoAreaOne from "../components/VideoAreaOne";
-import WhyChooseUsTwo from "../components/WhyChooseUsTwo";
-import SearchPopup from "../elements/SearchPopup";
-
+import React, { Fragment, Suspense } from "react";
+import Preloader from "../elements/Preloader";
+const AboutTwo = React.lazy(() => import("../components/AboutTwo"));
+const BannerTwo = React.lazy(() => import("../components/BannerTwo"));
+const BlogTwo = React.lazy(() => import("../components/BlogTwo"));
+const CounterTwo = React.lazy(() => import("../components/CounterTwo"));
+const FaqOne = React.lazy(() => import("../components/FaqOne"));
+const FooterBottomOne = React.lazy(() =>
+  import("../components/FooterBottomOne")
+);
+const FooterTwo = React.lazy(() => import("../components/FooterTwo"));
+const NavbarTwo = React.lazy(() => import("../components/NavbarTwo"));
+const PartnerTwo = React.lazy(() => import("../components/PartnerTwo"));
+const PricingOne = React.lazy(() => import("../components/PricingOne"));
+const RequestQuoteOne = React.lazy(() =>
+  import("../components/RequestQuoteOne")
+);
+const ServiceTwo = React.lazy(() => import("../components/ServiceTwo"));
+const TestimonialTwo = React.lazy(() => import("../components/TestimonialTwo"));
+const VideoAreaOne = React.lazy(() => import("../components/VideoAreaOne"));
+const WhyChooseUsTwo = React.lazy(() => import("../components/WhyChooseUsTwo"));
+const SearchPopup = React.lazy(() => import("../elements/SearchPopup"));
 const HomeTwo = () => {
   return (
     <>
-      {/* Search Popup */}
-      <SearchPopup />
+      <Fragment>
+        <Suspense fallback={<Preloader />}>
+          {/* Search Popup */}
+          <SearchPopup />
 
-      {/* Navbar Two */}
-      <NavbarTwo />
+          {/* Navbar Two */}
+          <NavbarTwo />
 
-      {/* Banner Two */}
-      <BannerTwo />
+          {/* Banner Two */}
+          <BannerTwo />
 
-      {/* Partner Two */}
-      <PartnerTwo />
+          {/* Partner Two */}
+          <PartnerTwo />
 
-      {/* About Two */}
-      <AboutTwo />
+          {/* About Two */}
+          <AboutTwo />
 
-      {/* Counter Two */}
-      <CounterTwo />
+          {/* Counter Two */}
+          <CounterTwo />
 
-      {/* Service Two */}
-      <ServiceTwo />
+          {/* Service Two */}
+          <ServiceTwo />
 
-      {/* Why Choose Us Two */}
-      <WhyChooseUsTwo />
+          {/* Why Choose Us Two */}
+          <WhyChooseUsTwo />
 
-      {/* Request Quote One */}
-      <RequestQuoteOne />
+          {/* Request Quote One */}
+          <RequestQuoteOne />
 
-      {/* Pricing One */}
-      <PricingOne />
+          {/* Pricing One */}
+          <PricingOne />
 
-      {/* Testimonial Two */}
-      <TestimonialTwo />
+          {/* Testimonial Two */}
+          <TestimonialTwo />
 
-      {/* Video Area One */}
-      <VideoAreaOne />
+          {/* Video Area One */}
+          <VideoAreaOne />
 
-      {/* Faq One */}
-      <FaqOne />
+          {/* Faq One */}
+          <FaqOne />
 
-      {/* Blog Two */}
-      <BlogTwo />
+          {/* Blog Two */}
+          <BlogTwo />
 
-      {/* Footer Two */}
-      <FooterTwo />
+          {/* Footer Two */}
+          <FooterTwo />
 
-      {/* Footer Bottom One */}
-      <FooterBottomOne />
+          {/* Footer Bottom One */}
+          <FooterBottomOne />
+        </Suspense>
+      </Fragment>
     </>
   );
 };

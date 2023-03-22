@@ -1,79 +1,85 @@
-import React from "react";
-import AboutOne from "../components/AboutOne";
-import BannerOne from "../components/BannerOne";
-import BlogOne from "../components/BlogOne";
-import ContactOne from "../components/ContactOne";
-import CounterOne from "../components/CounterOne";
-import FeatureOne from "../components/FeatureOne";
-import FooterBottomOne from "../components/FooterBottomOne";
-import FooterOne from "../components/FooterOne";
-import NavbarOne from "../components/NavbarOne";
-import PartnerOne from "../components/PartnerOne";
-import PortfolioOne from "../components/PortfolioOne";
-import ServiceOne from "../components/ServiceOne";
-import TeamOne from "../components/TeamOne";
-import TestimonialOne from "../components/TestimonialOne";
-import WhyChooseUsOne from "../components/WhyChooseUsOne";
-import SearchPopup from "../elements/SearchPopup";
-
+import React, { Fragment, Suspense } from "react";
+import Preloader from "../elements/Preloader";
+const BannerOne = React.lazy(() => import("../components/BannerOne"));
+const AboutOne = React.lazy(() => import("../components/AboutOne"));
+const BlogOne = React.lazy(() => import("../components/BlogOne"));
+const ContactOne = React.lazy(() => import("../components/ContactOne"));
+const CounterOne = React.lazy(() => import("../components/CounterOne"));
+const FeatureOne = React.lazy(() => import("../components/FeatureOne"));
+const FooterBottomOne = React.lazy(() =>
+  import("../components/FooterBottomOne")
+);
+const FooterOne = React.lazy(() => import("../components/FooterOne"));
+const NavbarOne = React.lazy(() => import("../components/NavbarOne"));
+const PartnerOne = React.lazy(() => import("../components/PartnerOne"));
+const PortfolioOne = React.lazy(() => import("../components/PortfolioOne"));
+const ServiceOne = React.lazy(() => import("../components/ServiceOne"));
+const TeamOne = React.lazy(() => import("../components/TeamOne"));
+const TestimonialOne = React.lazy(() => import("../components/TestimonialOne"));
+const WhyChooseUsOne = React.lazy(() => import("../components/WhyChooseUsOne"));
+const SearchPopup = React.lazy(() => import("../elements/SearchPopup"));
 const HomeOne = () => {
   return (
     <>
-      {/* Search Popup */}
-      <SearchPopup />
+      <Fragment>
+        <Suspense fallback={<Preloader />}>
+          {/* Search Popup */}
+          <SearchPopup />
 
-      {/* Navbar One */}
-      <NavbarOne />
+          {/* Navbar One */}
+          <NavbarOne />
 
-      {/* Banner One */}
-      <BannerOne />
+          {/* Banner One */}
+          <BannerOne />
 
-      {/* Feature One */}
-      <div className='faq-area pd-top-120'>
-        <FeatureOne />
-      </div>
+          {/* Feature One */}
+          <div className='faq-area pd-top-120'>
+            <FeatureOne />
+          </div>
 
-      {/* About One */}
-      <AboutOne />
+          {/* About One */}
+          <AboutOne />
 
-      {/* Service One */}
-      <ServiceOne />
+          {/* Service One */}
+          <ServiceOne />
 
-      {/* Why Choose Us One */}
-      <WhyChooseUsOne />
+          {/* Why Choose Us One */}
+          <WhyChooseUsOne />
 
-      {/* Counter One */}
+          {/* Counter One */}
 
-      <CounterOne />
+          <CounterOne />
 
-      {/* Team One */}
-      <TeamOne />
+          {/* Team One */}
+          <TeamOne />
 
-      {/* Contact One */}
-      <div
-        className='call-to-contact-area pd-top-240'
-        style={{ background: "#F9F9F9" }}
-      >
-        <ContactOne />
-      </div>
+          {/* Contact One */}
+          <div
+            className='call-to-contact-area pd-top-240'
+            style={{ background: "#F9F9F9" }}
+          >
+            <ContactOne />
+          </div>
 
-      {/* Testimonial One */}
-      <TestimonialOne />
+          {/* Testimonial One */}
+          <TestimonialOne />
 
-      {/* Portfolio One */}
-      <PortfolioOne />
+          {/* Portfolio One */}
+          <PortfolioOne />
 
-      {/* Blog One */}
-      <BlogOne />
+          {/* Blog One */}
+          <BlogOne />
 
-      {/* Partner One */}
-      <PartnerOne />
+          {/* Partner One */}
+          <PartnerOne />
 
-      {/* Footer One */}
-      <FooterOne />
+          {/* Footer One */}
+          <FooterOne />
 
-      {/* Footer Bottom One */}
-      <FooterBottomOne />
+          {/* Footer Bottom One */}
+          <FooterBottomOne />
+        </Suspense>
+      </Fragment>
     </>
   );
 };

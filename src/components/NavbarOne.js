@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   FaFacebookF,
   FaInstagram,
@@ -8,10 +8,24 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { SetSearchPopUp } from "../redux/stateSlice/clickActionSlice";
 import store from "../redux/store/store";
 
 const NavbarOne = () => {
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      if (window.pageYOffset < 300) {
+        setActive(false);
+      } else if (window.pageYOffset > 300) {
+        setActive(true);
+      }
+      return () => (window.onscroll = null);
+    };
+  }, []);
+
   const searchPopUp = useSelector((state) => state.clickAction.searchPopUp);
   const actionSearch = () => {
     store.dispatch(SetSearchPopUp(!searchPopUp));
@@ -21,11 +35,11 @@ const NavbarOne = () => {
       {/* navbar start */}
       <header className='navbar-area'>
         <div className='navbar-top'>
-          <div className='logo d-none d-lg-block'>
-            <a className='main-logo' href='home.html'>
+          <Link className='main-logo' to='/home'>
+            <div className='logo d-none d-lg-block'>
               <img src='/assets/img/logo.png' alt='img' />
-            </a>
-          </div>
+            </div>
+          </Link>
           <div className='nav-phone-wrap'>
             <FaPhoneAlt />
             +18882079275
@@ -58,31 +72,37 @@ const NavbarOne = () => {
               <div className='col-lg-2 col-md-3'>
                 <ul className='topbar-right social-area text-md-end text-center'>
                   <li>
-                    <a href='#'>
+                    <Link to='#'>
                       <FaFacebookF aria-hidden='true' />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href='#'>
+                    <Link to='#'>
                       <FaTwitter aria-hidden='true' />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href='#'>
+                    <Link to='#'>
                       <FaLinkedinIn aria-hidden='true' />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href='#'>
+                    <Link to='#'>
                       <FaInstagram aria-hidden='true' />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <nav className='navbar navbar-area-1 navbar-area navbar-expand-lg'>
+        <nav
+          className={
+            active
+              ? "navbar navbar-area-1 navbar-area navbar-expand-lg sticky-active"
+              : "navbar navbar-area-1 navbar-area navbar-expand-lg"
+          }
+        >
           <div className='container nav-container'>
             <div className='responsive-mobile-menu'>
               <button
@@ -96,14 +116,14 @@ const NavbarOne = () => {
               </button>
             </div>
             <div className='logo'>
-              <a href='home.html'>
+              <Link to='/home'>
                 <img src='assets/img/logo-2.png' alt='img' />
-              </a>
+              </Link>
             </div>
             <div className='nav-left-part'></div>
             <div className='nav-right-part nav-right-part-mobile'>
               <span
-                className='search-bar-btn cursor-pointer'
+                className='search-bar-btn cursor-pointer ps-5'
                 onClick={actionSearch}
               >
                 <svg
@@ -119,94 +139,94 @@ const NavbarOne = () => {
                   />
                 </svg>
               </span>
-              <a className='btn btn-base' href='contact.html'>
+              <Link className='btn btn-base' to='/contact'>
                 <span></span> Get A Quote
-              </a>
+              </Link>
             </div>
             <div className='collapse navbar-collapse' id='transpro_main_menu'>
               <ul className='navbar-nav menu-open'>
                 <li className='menu-item-has-children current-menu-item'>
-                  <a href='#'>Home</a>
+                  <Link to='#'>Home</Link>
                   <ul className='sub-menu'>
                     <li>
-                      <a href='home.html'>Home 01</a>
+                      <Link to='/home'>Home 01</Link>
                     </li>
                     <li>
-                      <a href='home-2.html'>Home 02</a>
+                      <Link to='/home-2'>Home 02</Link>
                     </li>
                     <li>
-                      <a href='home-3.html'>Home 03</a>
+                      <Link to='/home-3'>Home 03</Link>
                     </li>
                     <li>
-                      <a href='home-4.html'>Home 04</a>
+                      <Link to='/home-4'>Home 04</Link>
                     </li>
                     <li>
-                      <a href='home-5.html'>Home 05</a>
+                      <Link to='/home-5'>Home 05</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href='about.html'>About Us</a>
+                  <Link to='/about'>About Us</Link>
                 </li>
                 <li className='menu-item-has-children'>
-                  <a href='#'>Services</a>
+                  <Link to='#'>Services</Link>
                   <ul className='sub-menu'>
                     <li>
-                      <a href='service.html'>Service</a>
+                      <Link to='/service'>Service</Link>
                     </li>
                     <li>
-                      <a href='service-details.html'>Service Details Page</a>
+                      <Link to='/service-details'>Service Details Page</Link>
                     </li>
                   </ul>
                 </li>
                 <li className='menu-item-has-children'>
-                  <a href='#'>Pages</a>
+                  <Link to='#'>Pages</Link>
                   <ul className='sub-menu'>
                     <li>
-                      <a href='about.html'>About Us</a>
+                      <Link to='/about'>About Us</Link>
                     </li>
                     <li>
-                      <a href='service.html'>Service Page</a>
+                      <Link to='/service'>Service Page</Link>
                     </li>
                     <li>
-                      <a href='servie-details.html'>Service Details Page</a>
+                      <Link to='/service-details'>Service Details Page</Link>
                     </li>
                     <li>
-                      <a href='blog.html'>Blog Page</a>
+                      <Link to='/blog'>Blog Page</Link>
                     </li>
                     <li>
-                      <a href='blog-details.html'>Blog Details</a>
+                      <Link to='/blog-details'>Blog Details</Link>
                     </li>
                     <li>
-                      <a href='pricing.html'>Pricing</a>
+                      <Link to='/pricing'>Pricing</Link>
                     </li>
                     <li>
-                      <a href='faq.html'>FAQ</a>
+                      <Link to='/faq'>FAQ</Link>
                     </li>
                     <li>
-                      <a href='contact.html'>Contact</a>
+                      <Link to='/contact'>Contact</Link>
                     </li>
                   </ul>
                 </li>
                 <li className='menu-item-has-children'>
-                  <a href='#'>Blog</a>
+                  <Link to='#'>Blog</Link>
                   <ul className='sub-menu'>
                     <li>
-                      <a href='blog.html'>Blog</a>
+                      <Link to='/blog'>Blog</Link>
                     </li>
                     <li>
-                      <a href='blog-details.html'>Blog Details</a>
+                      <Link to='/blog-details'>Blog Details</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href='contact.html'>Contact Us</a>
+                  <Link to='/contact'>Contact Us</Link>
                 </li>
               </ul>
             </div>
             <div className='nav-right-part nav-right-part-desktop'>
               <span
-                className='search-bar-btn cursor-pointer p-1'
+                className='search-bar-btn cursor-pointer ps-5'
                 onClick={actionSearch}
               >
                 <svg
@@ -222,9 +242,9 @@ const NavbarOne = () => {
                   />
                 </svg>
               </span>
-              <a className='btn btn-base' href='contact.html'>
+              <Link className='btn btn-base' to='/contact'>
                 <span></span> Get A Quote
-              </a>
+              </Link>
             </div>
           </div>
         </nav>

@@ -1,31 +1,39 @@
-import React from "react";
-import BlogDetailsInner from "../components/BlogDetailsInner";
-import Breadcrumb from "../components/Breadcrumb";
-import FooterBottomOne from "../components/FooterBottomOne";
-import FooterOne from "../components/FooterOne";
-import NavbarOne from "../components/NavbarOne";
-import SearchPopup from "../elements/SearchPopup";
-
+import React, { Fragment, Suspense } from "react";
+import Preloader from "../elements/Preloader";
+const BlogDetailsInner = React.lazy(() =>
+  import("../components/BlogDetailsInner")
+);
+const Breadcrumb = React.lazy(() => import("../components/Breadcrumb"));
+const FooterBottomOne = React.lazy(() =>
+  import("../components/FooterBottomOne")
+);
+const FooterOne = React.lazy(() => import("../components/FooterOne"));
+const NavbarOne = React.lazy(() => import("../components/NavbarOne"));
+const SearchPopup = React.lazy(() => import("../elements/SearchPopup"));
 const BlogDetails = () => {
   return (
     <>
-      {/* Search Popup */}
-      <SearchPopup />
+      <Fragment>
+        <Suspense fallback={<Preloader />}>
+          {/* Search Popup */}
+          <SearchPopup />
 
-      {/* Navbar One */}
-      <NavbarOne />
+          {/* Navbar One */}
+          <NavbarOne />
 
-      {/* Breadcrumb */}
-      <Breadcrumb title={"BLOG DETAILS"} />
+          {/* Breadcrumb */}
+          <Breadcrumb title={"BLOG DETAILS"} />
 
-      {/* Blog Details Inner */}
-      <BlogDetailsInner />
+          {/* Blog Details Inner */}
+          <BlogDetailsInner />
 
-      {/* Footer One */}
-      <FooterOne />
+          {/* Footer One */}
+          <FooterOne />
 
-      {/* Footer Bottom One */}
-      <FooterBottomOne />
+          {/* Footer Bottom One */}
+          <FooterBottomOne />
+        </Suspense>
+      </Fragment>
     </>
   );
 };

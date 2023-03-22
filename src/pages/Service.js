@@ -1,41 +1,47 @@
-import React from "react";
-import Breadcrumb from "../components/Breadcrumb";
-import ContactOne from "../components/ContactOne";
-import FooterBottomOne from "../components/FooterBottomOne";
-import FooterOne from "../components/FooterOne";
-import NavbarOne from "../components/NavbarOne";
-import PartnerOne from "../components/PartnerOne";
-import ServiceOneAll from "../components/ServiceOneAll";
-import SearchPopup from "../elements/SearchPopup";
-
+import React, { Fragment, Suspense } from "react";
+import Preloader from "../elements/Preloader";
+const Breadcrumb = React.lazy(() => import("../components/Breadcrumb"));
+const ContactOne = React.lazy(() => import("../components/ContactOne"));
+const FooterBottomOne = React.lazy(() =>
+  import("../components/FooterBottomOne")
+);
+const FooterOne = React.lazy(() => import("../components/FooterOne"));
+const NavbarOne = React.lazy(() => import("../components/NavbarOne"));
+const PartnerOne = React.lazy(() => import("../components/PartnerOne"));
+const ServiceOneAll = React.lazy(() => import("../components/ServiceOneAll"));
+const SearchPopup = React.lazy(() => import("../elements/SearchPopup"));
 const Service = () => {
   return (
     <>
-      {/* Search Popup */}
-      <SearchPopup />
+      <Fragment>
+        <Suspense fallback={<Preloader />}>
+          {/* Search Popup */}
+          <SearchPopup />
 
-      {/* Navbar One */}
-      <NavbarOne />
+          {/* Navbar One */}
+          <NavbarOne />
 
-      {/* Breadcrumb */}
-      <Breadcrumb title={"SERVICES"} />
+          {/* Breadcrumb */}
+          <Breadcrumb title={"SERVICES"} />
 
-      {/* Service One All */}
-      <ServiceOneAll />
+          {/* Service One All */}
+          <ServiceOneAll />
 
-      {/* Contact One */}
-      <div className='call-to-contact-area pd-top-140  mt-0'>
-        <ContactOne />
-      </div>
+          {/* Contact One */}
+          <div className='call-to-contact-area pd-top-140  mt-0'>
+            <ContactOne />
+          </div>
 
-      {/* Partner One */}
-      <PartnerOne />
+          {/* Partner One */}
+          <PartnerOne />
 
-      {/* Footer One */}
-      <FooterOne />
+          {/* Footer One */}
+          <FooterOne />
 
-      {/* Footer Bottom One */}
-      <FooterBottomOne />
+          {/* Footer Bottom One */}
+          <FooterBottomOne />
+        </Suspense>{" "}
+      </Fragment>
     </>
   );
 };

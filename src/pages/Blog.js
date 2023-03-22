@@ -1,31 +1,37 @@
-import React from "react";
-import BlogView from "../components/BlogView";
-import Breadcrumb from "../components/Breadcrumb";
-import FooterBottomOne from "../components/FooterBottomOne";
-import FooterOne from "../components/FooterOne";
-import NavbarOne from "../components/NavbarOne";
-import SearchPopup from "../elements/SearchPopup";
-
+import React, { Fragment, Suspense } from "react";
+import Preloader from "../elements/Preloader";
+const BlogView = React.lazy(() => import("../components/BlogView"));
+const Breadcrumb = React.lazy(() => import("../components/Breadcrumb"));
+const FooterBottomOne = React.lazy(() =>
+  import("../components/FooterBottomOne")
+);
+const FooterOne = React.lazy(() => import("../components/FooterOne"));
+const NavbarOne = React.lazy(() => import("../components/NavbarOne"));
+const SearchPopup = React.lazy(() => import("../elements/SearchPopup"));
 const Blog = () => {
   return (
     <>
-      {/* Search Popup */}
-      <SearchPopup />
+      <Fragment>
+        <Suspense fallback={<Preloader />}>
+          {/* Search Popup */}
+          <SearchPopup />
 
-      {/* Navbar One */}
-      <NavbarOne />
+          {/* Navbar One */}
+          <NavbarOne />
 
-      {/* Breadcrumb */}
-      <Breadcrumb title={"BLOG"} />
+          {/* Breadcrumb */}
+          <Breadcrumb title={"BLOG"} />
 
-      {/* Blog View */}
-      <BlogView />
+          {/* Blog View */}
+          <BlogView />
 
-      {/* Footer One */}
-      <FooterOne />
+          {/* Footer One */}
+          <FooterOne />
 
-      {/* Footer Bottom One */}
-      <FooterBottomOne />
+          {/* Footer Bottom One */}
+          <FooterBottomOne />
+        </Suspense>
+      </Fragment>
     </>
   );
 };

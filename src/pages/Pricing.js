@@ -1,44 +1,50 @@
-import React from "react";
-import Breadcrumb from "../components/Breadcrumb";
-import ContactOne from "../components/ContactOne";
-import FooterBottomOne from "../components/FooterBottomOne";
-import FooterOne from "../components/FooterOne";
-import NavbarOne from "../components/NavbarOne";
-import PartnerOne from "../components/PartnerOne";
-import PricingOne from "../components/PricingOne";
-import SearchPopup from "../elements/SearchPopup";
-
+import React, { Fragment, Suspense } from "react";
+import Preloader from "../elements/Preloader";
+const Breadcrumb = React.lazy(() => import("../components/Breadcrumb"));
+const ContactOne = React.lazy(() => import("../components/ContactOne"));
+const FooterBottomOne = React.lazy(() =>
+  import("../components/FooterBottomOne")
+);
+const FooterOne = React.lazy(() => import("../components/FooterOne"));
+const NavbarOne = React.lazy(() => import("../components/NavbarOne"));
+const PartnerOne = React.lazy(() => import("../components/PartnerOne"));
+const PricingOne = React.lazy(() => import("../components/PricingOne"));
+const SearchPopup = React.lazy(() => import("../elements/SearchPopup"));
 const Pricing = () => {
   return (
     <>
-      {/* Search Popup */}
-      <SearchPopup />
+      <Fragment>
+        <Suspense fallback={<Preloader />}>
+          {/* Search Popup */}
+          <SearchPopup />
 
-      {/* Navbar One */}
-      <NavbarOne />
+          {/* Navbar One */}
+          <NavbarOne />
 
-      {/* Breadcrumb */}
-      <Breadcrumb title={"PRICING"} />
+          {/* Breadcrumb */}
+          <Breadcrumb title={"PRICING"} />
 
-      {/* Pricing One */}
-      <PricingOne />
+          {/* Pricing One */}
+          <PricingOne />
 
-      {/* Contact One */}
-      <div
-        className='call-to-contact-area pd-top-140  mt-0'
-        style={{ background: "#F9F9F9" }}
-      >
-        <ContactOne />
-      </div>
+          {/* Contact One */}
+          <div
+            className='call-to-contact-area pd-top-140  mt-0'
+            style={{ background: "#F9F9F9" }}
+          >
+            <ContactOne />
+          </div>
 
-      {/* Partner One */}
-      <PartnerOne />
+          {/* Partner One */}
+          <PartnerOne />
 
-      {/* Footer One */}
-      <FooterOne />
+          {/* Footer One */}
+          <FooterOne />
 
-      {/* Footer Bottom One */}
-      <FooterBottomOne />
+          {/* Footer Bottom One */}
+          <FooterBottomOne />
+        </Suspense>
+      </Fragment>
     </>
   );
 };

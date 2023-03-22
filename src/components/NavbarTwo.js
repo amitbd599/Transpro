@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   FaFacebookF,
   FaInstagram,
@@ -8,9 +8,22 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { SetSearchPopUp } from "../redux/stateSlice/clickActionSlice";
 import store from "../redux/store/store";
 const NavbarTwo = () => {
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      if (window.pageYOffset < 300) {
+        setActive(false);
+      } else if (window.pageYOffset > 300) {
+        setActive(true);
+      }
+      return () => (window.onscroll = null);
+    };
+  }, []);
   const searchPopUp = useSelector((state) => state.clickAction.searchPopUp);
   const actionSearch = () => {
     store.dispatch(SetSearchPopUp(!searchPopUp));
@@ -19,7 +32,13 @@ const NavbarTwo = () => {
     <>
       {/* navbar start */}
       <header className='navbar-area'>
-        <nav className='navbar navbar-area-2 navbar-area navbar-expand-lg'>
+        <nav
+          className={
+            active
+              ? "navbar navbar-area-2 navbar-area navbar-expand-lg sticky-active"
+              : "navbar navbar-area-2 navbar-area navbar-expand-lg"
+          }
+        >
           <div className='container nav-container'>
             <div className='responsive-mobile-menu'>
               <button
@@ -33,12 +52,12 @@ const NavbarTwo = () => {
               </button>
             </div>
             <div className='logo'>
-              <a className='logo-1' href='home.html'>
+              <Link className='logo-1' to='/home'>
                 <img src='assets/img/home-2/logo.png' alt='img' />
-              </a>
-              <a className='logo-2' href='home.html'>
+              </Link>
+              <Link className='logo-2' to='/home'>
                 <img src='assets/img/logo-2.png' alt='logo' />
-              </a>
+              </Link>
             </div>
             <div className='nav-right-part nav-right-part-mobile'>
               <span
@@ -58,88 +77,88 @@ const NavbarTwo = () => {
                   />
                 </svg>
               </span>
-              <a className='btn btn-base' href='contact.html'>
+              <Link className='btn btn-base' to='/contact'>
                 <span></span> Get A Quote
-              </a>
+              </Link>
             </div>
             <div className='collapse navbar-collapse' id='transpro_main_menu'>
               <ul className='navbar-nav menu-open text-end'>
                 <li className='menu-item-has-children current-menu-item'>
-                  <a href='#'>Home</a>
+                  <Link to='#'>Home</Link>
                   <ul className='sub-menu'>
                     <li>
-                      <a href='home.html'>Home 01</a>
+                      <Link to='/home'>Home 01</Link>
                     </li>
                     <li>
-                      <a href='home-2.html'>Home 02</a>
+                      <Link to='/home-2'>Home 02</Link>
                     </li>
                     <li>
-                      <a href='home-3.html'>Home 03</a>
+                      <Link to='/home-3'>Home 03</Link>
                     </li>
                     <li>
-                      <a href='home-4.html'>Home 04</a>
+                      <Link to='/home-4'>Home 04</Link>
                     </li>
                     <li>
-                      <a href='home-5.html'>Home 05</a>
+                      <Link to='/home-5'>Home 05</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href='about.html'>About Us</a>
+                  <Link to='/about'>About Us</Link>
                 </li>
                 <li className='menu-item-has-children'>
-                  <a href='#'>Services</a>
+                  <Link to='#'>Services</Link>
                   <ul className='sub-menu'>
                     <li>
-                      <a href='service.html'>Service</a>
+                      <Link to='/service'>Service</Link>
                     </li>
                     <li>
-                      <a href='service-details.html'>Service Details Page</a>
+                      <Link to='/service-details'>Service Details Page</Link>
                     </li>
                   </ul>
                 </li>
                 <li className='menu-item-has-children'>
-                  <a href='#'>Pages</a>
+                  <Link to='#'>Pages</Link>
                   <ul className='sub-menu'>
                     <li>
-                      <a href='about.html'>About Us</a>
+                      <Link to='/about'>About Us</Link>
                     </li>
                     <li>
-                      <a href='service.html'>Service Page</a>
+                      <Link to='/service'>Service Page</Link>
                     </li>
                     <li>
-                      <a href='servie-details.html'>Service Details Page</a>
+                      <Link to='/service-details'>Service Details Page</Link>
                     </li>
                     <li>
-                      <a href='blog.html'>Blog Page</a>
+                      <Link to='/blog'>Blog Page</Link>
                     </li>
                     <li>
-                      <a href='blog-details.html'>Blog Details</a>
+                      <Link to='/blog-details'>Blog Details</Link>
                     </li>
                     <li>
-                      <a href='pricing.html'>Pricing</a>
+                      <Link to='/pricing'>Pricing</Link>
                     </li>
                     <li>
-                      <a href='faq.html'>FAQ</a>
+                      <Link to='/faq'>FAQ</Link>
                     </li>
                     <li>
-                      <a href='contact.html'>Contact</a>
+                      <Link to='/contact'>Contact</Link>
                     </li>
                   </ul>
                 </li>
                 <li className='menu-item-has-children'>
-                  <a href='#'>Blog</a>
+                  <Link to='#'>Blog</Link>
                   <ul className='sub-menu'>
                     <li>
-                      <a href='blog.html'>Blog</a>
+                      <Link to='/blog'>Blog</Link>
                     </li>
                     <li>
-                      <a href='blog-details.html'>Blog Details</a>
+                      <Link to='/blog-details'>Blog Details</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href='contact.html'>Contact Us</a>
+                  <Link to='/contact'>Contact Us</Link>
                 </li>
               </ul>
             </div>
@@ -161,9 +180,9 @@ const NavbarTwo = () => {
                   />
                 </svg>
               </span>
-              <a className='btn btn-base' href='contact.html'>
+              <Link className='btn btn-base' to='/contact'>
                 <span></span> Get A Quote
-              </a>
+              </Link>
             </div>
           </div>
         </nav>
