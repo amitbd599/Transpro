@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaPlay } from "react-icons/fa";
-
+import ModalVideo from "react-modal-video";
 const WhyChooseUsOne = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
       {/*wcu-area start*/}
@@ -16,13 +17,13 @@ const WhyChooseUsOne = () => {
             <div className='col-xl-7 col-lg-6 order-lg-2'>
               <div className='video-thumb-wrap'>
                 <img src='assets/img/wcu/video.png' alt='img' />
-                <a
-                  className='video-play-btn'
-                  href='https://www.youtube.com/embed/Wimkqo8gDZ0'
+                <span
+                  className='video-play-btn cursor-pointer'
                   data-effect='mfp-zoom-in'
+                  onClick={() => setOpen(true)}
                 >
                   <FaPlay />
-                </a>
+                </span>
               </div>
             </div>
             <div className='col-xl-5 col-lg-6 order-lg-1'>
@@ -75,6 +76,13 @@ const WhyChooseUsOne = () => {
         </div>
       </div>
       {/*wcu-area end*/}
+      <ModalVideo
+        channel='youtube'
+        autoplay
+        isOpen={isOpen}
+        videoId='XM6kTQPzzpQ'
+        onClose={() => setOpen(false)}
+      />
     </>
   );
 };

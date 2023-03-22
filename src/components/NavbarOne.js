@@ -13,6 +13,7 @@ import { SetSearchPopUp } from "../redux/stateSlice/clickActionSlice";
 import store from "../redux/store/store";
 
 const NavbarOne = () => {
+  const [open, setOpen] = useState(false);
   const [active, setActive] = useState(false);
 
   useEffect(() => {
@@ -106,7 +107,12 @@ const NavbarOne = () => {
           <div className='container nav-container'>
             <div className='responsive-mobile-menu'>
               <button
-                className='menu toggle-btn d-block d-lg-none'
+                onClick={() => setOpen(!open)}
+                className={
+                  open
+                    ? "menu toggle-btn d-block d-lg-none open"
+                    : "menu toggle-btn d-block d-lg-none "
+                }
                 data-target='#transpro_main_menu'
                 aria-expanded='false'
                 aria-label='Toggle navigation'
@@ -143,7 +149,14 @@ const NavbarOne = () => {
                 <span></span> Get A Quote
               </Link>
             </div>
-            <div className='collapse navbar-collapse' id='transpro_main_menu'>
+            <div
+              className={
+                open
+                  ? "collapse navbar-collapse sopen"
+                  : "collapse navbar-collapse"
+              }
+              id='transpro_main_menu'
+            >
               <ul className='navbar-nav menu-open'>
                 <li className='menu-item-has-children current-menu-item'>
                   <Link to='#'>Home</Link>
