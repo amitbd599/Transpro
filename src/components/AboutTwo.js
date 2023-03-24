@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaPlay } from "react-icons/fa";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
+import ModalVideo from "react-modal-video";
 const AboutTwo = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
       {/* about area start */}
@@ -84,13 +86,13 @@ const AboutTwo = () => {
                         DISCOVER MORE
                       </a>
                       <div className='video-wrap d-flex align-items-center gap-2'>
-                        <a
-                          className='video-play-btn'
-                          href='https://www.youtube.com/embed/Wimkqo8gDZ0'
+                        <span
+                          className='video-play-btn cursor-pointer'
                           data-effect='mfp-zoom-in'
+                          onClick={() => setOpen(true)}
                         >
                           <FaPlay />
-                        </a>
+                        </span>
                         <span>Watch The Video</span>
                       </div>
                     </div>
@@ -100,6 +102,13 @@ const AboutTwo = () => {
             </div>
           </div>
         </div>
+        <ModalVideo
+          channel='youtube'
+          autoplay
+          isOpen={isOpen}
+          videoId='XM6kTQPzzpQ'
+          onClose={() => setOpen(false)}
+        />
       </div>
       {/* about area end */}
     </>

@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from "react";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaPhoneAlt,
-  FaRegClock,
-  FaTwitter,
-} from "react-icons/fa";
+
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { SetSearchPopUp } from "../redux/stateSlice/clickActionSlice";
 import store from "../redux/store/store";
 const NavbarTwo = () => {
+  const [open, setOpen] = useState(false);
   const [active, setActive] = useState(false);
 
   useEffect(() => {
@@ -28,6 +22,19 @@ const NavbarTwo = () => {
   const actionSearch = () => {
     store.dispatch(SetSearchPopUp(!searchPopUp));
   };
+
+  // Control sidebar navigation
+  let items = document.querySelectorAll(".menu-item-has-children > a");
+  for (let i in items) {
+    if (items.hasOwnProperty(i)) {
+      items[i].onclick = function () {
+        this.parentElement
+          .querySelector(".sub-menu")
+          .classList.toggle("active");
+        this.classList.toggle("open");
+      };
+    }
+  }
   return (
     <>
       {/* navbar start */}
@@ -42,7 +49,12 @@ const NavbarTwo = () => {
           <div className='container nav-container'>
             <div className='responsive-mobile-menu'>
               <button
-                className='menu toggle-btn d-block d-lg-none'
+                onClick={() => setOpen(!open)}
+                className={
+                  open
+                    ? "menu toggle-btn d-block d-lg-none open"
+                    : "menu toggle-btn d-block d-lg-none "
+                }
                 data-target='#transpro_main_menu'
                 aria-expanded='false'
                 aria-label='Toggle navigation'
@@ -81,7 +93,14 @@ const NavbarTwo = () => {
                 <span></span> Get A Quote
               </Link>
             </div>
-            <div className='collapse navbar-collapse' id='transpro_main_menu'>
+            <div
+              className={
+                open
+                  ? "collapse navbar-collapse sopen"
+                  : "collapse navbar-collapse"
+              }
+              id='transpro_main_menu'
+            >
               <ul className='navbar-nav menu-open text-end'>
                 <li className='menu-item-has-children current-menu-item'>
                   <Link to='#'>Home</Link>
