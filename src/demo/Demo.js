@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 import { FaCartArrowDown, FaCog } from "react-icons/fa";
 import TrackVisibility from "react-on-screen";
 import { Link } from "react-router-dom";
-// import "./style.css";
+import "./style.css";
 const Demo = () => {
   const [stickyNav, setStickyNav] = useState(false);
 
@@ -19,15 +19,21 @@ const Demo = () => {
   }, []);
 
   return (
-    <section className='root-demo'>
+    <section className='demo'>
       {/* Navigation */}
       <header className='navbar-area'>
-        <nav className='navbar navbar-expand-lg navbar-default navbar-fixed-top'>
+        <nav
+          className={
+            stickyNav
+              ? "navbar navbar-expand-lg navbar-default navbar-fixed-top top-nav-collapse"
+              : "navbar navbar-expand-lg navbar-default navbar-fixed-top"
+          }
+        >
           <div className='container nav-container'>
             <div className='logo'>
-              <a className='main-logo' href='index.html'>
-                <img src='demo-landing/img/logo-white.png' alt='img' />
-              </a>
+              <Link className='main-logo' to='/index'>
+                <img src='assets/demo-img/logo-white.png' alt='img' />
+              </Link>
             </div>
             <div className='nav-right-part nav-right-part-mobile ms-auto'>
               <ul className='text-end'>
@@ -42,9 +48,9 @@ const Demo = () => {
                   </a>
                 </li>
                 <li>
-                  <a className='cart' href='log-in.html'>
-                    <img src='demo-landing/img/add-to-cart.svg' alt='img' />
-                  </a>
+                  <Link className='cart' to='#'>
+                    <img src='assets/demo-img/add-to-cart.svg' alt='img' />
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -96,21 +102,21 @@ const Demo = () => {
       <section
         id='banner'
         className='banner-area'
-        style={{ backgroundImage: 'url("demo-landing/img/01.png")' }}
+        style={{ backgroundImage: 'url("assets/demo-img/01.png")' }}
       >
         <div className='sidebar-links'>
           <a
-            className='btn btn-white'
+            className='btn btn-white d-flex gap-2 align-items-center'
             href='https://themeforest.net/user/wowtheme7'
           >
-            <i className='fa fa-cart-arrow-down' />
+            <FaCartArrowDown />
             Add To Cart
           </a>
           <a
-            className='btn btn-white'
+            className='btn btn-white d-flex gap-2 align-items-center'
             href='https://themeforest.net/user/wowtheme7'
           >
-            <i className='fa fa-cog' />
+            <FaCog />
             Demo Link
           </a>
         </div>
@@ -156,7 +162,15 @@ const Demo = () => {
                 <div className='single-counter-inner text-center'>
                   <div className='details'>
                     <h2>
-                      <span className='counter'>13</span>+
+                      <TrackVisibility once>
+                        {({ isVisible }) =>
+                          isVisible && (
+                            <span className='counter'>
+                              <CountUp delay={0} start={0} end={13} />+
+                            </span>
+                          )
+                        }
+                      </TrackVisibility>
                     </h2>
                     <p>Total Pages</p>
                   </div>
@@ -166,7 +180,15 @@ const Demo = () => {
                 <div className='single-counter-inner text-center'>
                   <div className='details'>
                     <h2>
-                      <span className='counter'>05</span>
+                      <TrackVisibility once>
+                        {({ isVisible }) =>
+                          isVisible && (
+                            <span className='counter'>
+                              <CountUp delay={0} start={0} end={3} />
+                            </span>
+                          )
+                        }
+                      </TrackVisibility>
                     </h2>
                     <p>Total Homes</p>
                   </div>
@@ -176,7 +198,15 @@ const Demo = () => {
                 <div className='single-counter-inner text-center'>
                   <div className='details'>
                     <h2>
-                      <span className='counter'>08</span>+
+                      <TrackVisibility once>
+                        {({ isVisible }) =>
+                          isVisible && (
+                            <span className='counter'>
+                              <CountUp delay={0} start={0} end={8} />+
+                            </span>
+                          )
+                        }
+                      </TrackVisibility>
                     </h2>
                     <p>Inner Pages</p>
                   </div>
@@ -188,7 +218,7 @@ const Demo = () => {
       </div>
       {/* counter end */}
       {/* demo Section */}
-      <section id='demo' className='demo-section pd-top-100'>
+      <section id='demo' className='demo-section pd-top-180'>
         <div className='container'>
           <div className='row justify-content-center'>
             <div className='col-lg-8 text-center'>
@@ -209,15 +239,15 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.2s'
               >
-                <a href='home.html'>
+                <Link to='/home'>
                   <span className='thumb'>
-                    <img src='demo-landing/img/1.png' alt='img' />
+                    <img src='assets/demo-img/1.png' alt='img' />
                   </span>
                   Home V.1
-                </a>
-                <a className='btn btn-base' href='home.html'>
+                </Link>
+                <Link className='btn btn-base' to='/home'>
                   Live Demo
-                </a>
+                </Link>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -226,15 +256,15 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.3s'
               >
-                <a href='home-2.html'>
+                <Link to='/home-2'>
                   <span className='thumb'>
-                    <img src='demo-landing/img/2.png' alt='img' />
+                    <img src='assets/demo-img/2.png' alt='img' />
                   </span>
                   Home V.2
-                </a>
-                <a className='btn btn-base' href='home-2.html'>
+                </Link>
+                <Link className='btn btn-base' to='/home-2'>
                   Live Demo
-                </a>
+                </Link>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -243,15 +273,15 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.4s'
               >
-                <a href='home-3.html'>
+                <Link to='/home-3'>
                   <span className='thumb'>
-                    <img src='demo-landing/img/3.png' alt='img' />
+                    <img src='assets/demo-img/3.png' alt='img' />
                   </span>
                   Home V.3
-                </a>
-                <a className='btn btn-base' href='home-3.html'>
+                </Link>
+                <Link className='btn btn-base' to='/home-3'>
                   Live Demo
-                </a>
+                </Link>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -260,15 +290,15 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.4s'
               >
-                <a href='home-4.html'>
+                <Link to='/home-4'>
                   <span className='thumb'>
-                    <img src='demo-landing/img/4.png' alt='img' />
+                    <img src='assets/demo-img/4.png' alt='img' />
                   </span>
                   Home V.4
-                </a>
-                <a className='btn btn-base' href='home-4.html'>
+                </Link>
+                <Link className='btn btn-base' to='/home-4'>
                   Live Demo
-                </a>
+                </Link>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -277,15 +307,15 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.4s'
               >
-                <a href='home-5.html'>
+                <Link to='/home-5'>
                   <span className='thumb'>
-                    <img src='demo-landing/img/5.png' alt='img' />
+                    <img src='assets/demo-img/5.png' alt='img' />
                   </span>
                   Home V.5
-                </a>
-                <a className='btn btn-base' href='home-5.html'>
+                </Link>
+                <Link className='btn btn-base' to='/home-5'>
                   Live Demo
-                </a>
+                </Link>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -296,7 +326,7 @@ const Demo = () => {
               >
                 <a href='#'>
                   <span className='thumb'>
-                    <img src='demo-landing/img/4.png' alt='img' />
+                    <img src='assets/demo-img/4.png' alt='img' />
                   </span>
                   <span className='cm-soon-title'>Comming Soon</span>
                 </a>
@@ -326,15 +356,15 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.6s'
               >
-                <a href='about.html'>
+                <Link to='/about'>
                   <span className='thumb'>
-                    <img src='demo-landing/img/about.png' alt='img' />
+                    <img src='assets/demo-img/about.png' alt='img' />
                   </span>
                   About Page
-                </a>
-                <a className='btn btn-base' href='about.html'>
+                </Link>
+                <Link className='btn btn-base' to='/about'>
                   Live Demo
-                </a>
+                </Link>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -343,15 +373,15 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.6s'
               >
-                <a href='service.html'>
+                <Link to='/service'>
                   <span className='thumb'>
-                    <img src='demo-landing/img/service.png' alt='img' />
+                    <img src='assets/demo-img/service.png' alt='img' />
                   </span>
                   Service Page
-                </a>
-                <a className='btn btn-base' href='service.html'>
+                </Link>
+                <Link className='btn btn-base' to='/service'>
                   Live Demo
-                </a>
+                </Link>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -360,15 +390,15 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.6s'
               >
-                <a href='service-details.html'>
+                <Link to='/service-details'>
                   <span className='thumb'>
-                    <img src='demo-landing/img/service-details.png' alt='img' />
+                    <img src='assets/demo-img/service-details.png' alt='img' />
                   </span>
                   Service Details Page{" "}
-                </a>
-                <a className='btn btn-base' href='service-details.html'>
+                </Link>
+                <Link className='btn btn-base' to='/service-details'>
                   Live Demo
-                </a>
+                </Link>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -377,15 +407,15 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.6s'
               >
-                <a href='pricing.html'>
+                <Link to='/pricing'>
                   <span className='thumb'>
-                    <img src='demo-landing/img/pricing.png' alt='img' />
+                    <img src='assets/demo-img/pricing.png' alt='img' />
                   </span>
                   Pricing Page{" "}
-                </a>
-                <a className='btn btn-base' href='pricing.html'>
+                </Link>
+                <Link className='btn btn-base' to='/pricing'>
                   Live Demo
-                </a>
+                </Link>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -394,15 +424,15 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.6s'
               >
-                <a href='blog.html'>
+                <Link to='/blog'>
                   <span className='thumb'>
-                    <img src='demo-landing/img/blog.png' alt='img' />
+                    <img src='assets/demo-img/blog.png' alt='img' />
                   </span>
                   Blog Page
-                </a>
-                <a className='btn btn-base' href='blog.html'>
+                </Link>
+                <Link className='btn btn-base' to='/blog'>
                   Live Demo
-                </a>
+                </Link>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -411,15 +441,15 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.6s'
               >
-                <a href='blog-details.html'>
+                <Link to='/blog-details'>
                   <span className='thumb'>
-                    <img src='demo-landing/img/blog-details.png' alt='img' />
+                    <img src='assets/demo-img/blog-details.png' alt='img' />
                   </span>
                   Blog Details Page
-                </a>
-                <a className='btn btn-base' href='blog-details.html'>
+                </Link>
+                <Link className='btn btn-base' to='/blog-details'>
                   Live Demo
-                </a>
+                </Link>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -428,15 +458,15 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.6s'
               >
-                <a href='faq.html'>
+                <Link to='/faq'>
                   <span className='thumb'>
-                    <img src='demo-landing/img/faq.png' alt='img' />
+                    <img src='assets/demo-img/faq.png' alt='img' />
                   </span>
                   FAQ Page{" "}
-                </a>
-                <a className='btn btn-base' href='faq.html'>
+                </Link>
+                <Link className='btn btn-base' to='/faq'>
                   Live Demo
-                </a>
+                </Link>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -445,15 +475,15 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.6s'
               >
-                <a href='contact.html'>
+                <Link to='/contact'>
                   <span className='thumb'>
-                    <img src='demo-landing/img/contact.png' alt='img' />
+                    <img src='assets/demo-img/contact.png' alt='img' />
                   </span>
                   Contact
-                </a>
-                <a className='btn btn-base' href='contact.html'>
+                </Link>
+                <Link className='btn btn-base' to='/contact'>
                   Live Demo
-                </a>
+                </Link>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -462,12 +492,12 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.4s'
               >
-                <a href='#'>
+                <Link to='#'>
                   <span className='thumb'>
-                    <img src='demo-landing/img/4.png' alt='img' />
+                    <img src='assets/demo-img/4.png' alt='img' />
                   </span>
                   <span className='cm-soon-title'>Comming Soon</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -493,7 +523,7 @@ const Demo = () => {
                 <span className='thumb'>
                   <img
                     className='w-100'
-                    src='demo-landing/img/header.png'
+                    src='assets/demo-img/header.png'
                     alt='img'
                   />
                 </span>
@@ -504,7 +534,7 @@ const Demo = () => {
                 <span className='thumb'>
                   <img
                     className='w-100'
-                    src='demo-landing/img/header2.png'
+                    src='assets/demo-img/header2.png'
                     alt='img'
                   />
                 </span>
@@ -529,7 +559,7 @@ const Demo = () => {
                 <span className='thumb'>
                   <img
                     className='w-100'
-                    src='demo-landing/img/footer.png'
+                    src='assets/demo-img/footer.png'
                     alt='img'
                   />
                 </span>
@@ -563,7 +593,7 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.2s'
               >
-                <img src='demo-landing/img/featured/3.png' alt='img' />
+                <img src='assets/demo-img/featured/3.png' alt='img' />
                 Bootstrap 5+
               </div>
             </div>
@@ -573,7 +603,7 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.4s'
               >
-                <img src='demo-landing/img/featured/1.png' alt='img' />
+                <img src='assets/demo-img/featured/1.png' alt='img' />
                 Sass
               </div>
             </div>
@@ -583,7 +613,7 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.6s'
               >
-                <img src='demo-landing/img/featured/4.png' alt='img' />
+                <img src='assets/demo-img/featured/4.png' alt='img' />
                 Font-Awesome
               </div>
             </div>
@@ -593,7 +623,7 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.2s'
               >
-                <img src='demo-landing/img/featured/2.png' alt='img' />
+                <img src='assets/demo-img/featured/2.png' alt='img' />
                 Owl-Carousel
               </div>
             </div>
@@ -603,7 +633,7 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.4s'
               >
-                <img src='demo-landing/img/featured/5.png' alt='img' />
+                <img src='assets/demo-img/featured/5.png' alt='img' />
                 HTML5
               </div>
             </div>
@@ -613,7 +643,7 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.6s'
               >
-                <img src='demo-landing/img/featured/6.png' alt='img' />
+                <img src='assets/demo-img/featured/6.png' alt='img' />
                 CSS3
               </div>
             </div>
@@ -623,7 +653,7 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.2s'
               >
-                <img src='demo-landing/img/featured/7.png' alt='img' />
+                <img src='assets/demo-img/featured/7.png' alt='img' />
                 Jquery Tilt
               </div>
             </div>
@@ -633,7 +663,7 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.4s'
               >
-                <img src='demo-landing/img/featured/8.png' alt='img' />
+                <img src='assets/demo-img/featured/8.png' alt='img' />
                 W3C Validation
               </div>
             </div>
@@ -643,7 +673,7 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.6s'
               >
-                <img src='demo-landing/img/featured/9.png' alt='img' />
+                <img src='assets/demo-img/featured/9.png' alt='img' />
                 Clean Code
               </div>
             </div>
@@ -653,7 +683,7 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.2s'
               >
-                <img src='demo-landing/img/featured/10.png' alt='img' />
+                <img src='assets/demo-img/featured/10.png' alt='img' />
                 Magnific Popup
               </div>
             </div>
@@ -663,7 +693,7 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.4s'
               >
-                <img src='demo-landing/img/featured/12.png' alt='img' />
+                <img src='assets/demo-img/featured/12.png' alt='img' />
                 100% Responsive
               </div>
             </div>
@@ -673,7 +703,7 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.6s'
               >
-                <img src='demo-landing/img/featured/11.png' alt='img' />
+                <img src='assets/demo-img/featured/11.png' alt='img' />
                 Google Fonts
               </div>
             </div>
@@ -683,7 +713,7 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.2s'
               >
-                <img src='demo-landing/img/featured/14.png' alt='img' />
+                <img src='assets/demo-img/featured/14.png' alt='img' />
                 Well Documented
               </div>
             </div>
@@ -693,7 +723,7 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.4s'
               >
-                <img src='demo-landing/img/featured/15.png' alt='img' />
+                <img src='assets/demo-img/featured/15.png' alt='img' />
                 Counter Up
               </div>
             </div>
@@ -703,7 +733,7 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.6s'
               >
-                <img src='demo-landing/img/featured/13.png' alt='img' />
+                <img src='assets/demo-img/featured/13.png' alt='img' />
                 Wow Js
               </div>
             </div>
@@ -713,15 +743,15 @@ const Demo = () => {
       {/* footer area start */}
       <footer
         className='footer-area pd-top-100'
-        style={{ backgroundImage: 'url("demo-landing/img/01.png")' }}
+        style={{ backgroundImage: 'url("assets/demo-img/01.png")' }}
       >
         <div className='container'>
           <div className='row justify-content-center'>
             <div className='col-lg-8'>
               <div className='footer-widget widget text-center pd-bottom-100'>
-                <a className='logo' href='index.html'>
-                  <img src='demo-landing/img/logo-white.png' alt='#' />
-                </a>
+                <Link className='logo' to='/index'>
+                  <img src='assets/demo-img/logo-white.png' alt='#' />
+                </Link>
                 <h5 className='text-white mb-5 mt-5 lh-base'>
                   It is a modern &amp; beautiful Transport Template. It's
                   Specially transport &amp; logistics vehicle Site.
