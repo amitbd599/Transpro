@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaArrowRight,
   FaPhoneAlt,
@@ -8,8 +8,10 @@ import {
   FaRegFilePdf,
   FaSearch,
 } from "react-icons/fa";
+import ModalVideo from "react-modal-video";
 
 const ServiceDetailsInner = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
       {/* service area start */}
@@ -72,13 +74,13 @@ const ServiceDetailsInner = () => {
                 </p>
                 <div className='video-thumb-wrap pt-1 pb-4'>
                   <img src='assets/img/service/9.png' alt='img' />
-                  <a
-                    className='video-play-btn'
-                    href='https://www.youtube.com/embed/Wimkqo8gDZ0'
+                  <span
+                    className='video-play-btn cursor-pointer'
                     data-effect='mfp-zoom-in'
+                    onClick={() => setOpen(true)}
                   >
                     <FaPlay />
-                  </a>
+                  </span>
                 </div>
                 <p className='last-para'>
                   Dramatically morph extensive users before market-driven
@@ -203,6 +205,13 @@ const ServiceDetailsInner = () => {
         </div>
       </div>
       {/* service area end */}
+      <ModalVideo
+        channel='youtube'
+        autoplay
+        isOpen={isOpen}
+        videoId='XM6kTQPzzpQ'
+        onClose={() => setOpen(false)}
+      />
     </>
   );
 };
