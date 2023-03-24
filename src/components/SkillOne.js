@@ -47,7 +47,7 @@ const SkillOne = () => {
                     <h6>Cargo Freight</h6>
                     <div className='progress-count-wrap'>
                       <span className='progress-count counting' data-count={85}>
-                        0
+                        85
                       </span>
                       <span className='counting-icons'>%</span>
                     </div>
@@ -58,6 +58,7 @@ const SkillOne = () => {
                         id='progress'
                         className='progress-rate'
                         data-value={85}
+                        style={{ width: "85%" }}
                       ></div>
                     </div>
                   </div>
@@ -67,7 +68,7 @@ const SkillOne = () => {
                     <h6>Air Freight</h6>
                     <div className='progress-count-wrap'>
                       <span className='progress-count counting' data-count={80}>
-                        0
+                        80
                       </span>
                       <span className='counting-icons'>%</span>
                     </div>
@@ -78,6 +79,7 @@ const SkillOne = () => {
                         id='progress-1'
                         className='progress-rate'
                         data-value={80}
+                        style={{ width: "80%" }}
                       ></div>
                     </div>
                   </div>
@@ -87,7 +89,7 @@ const SkillOne = () => {
                     <h6>Road Freight</h6>
                     <div className='progress-count-wrap'>
                       <span className='progress-count counting' data-count={90}>
-                        0
+                        90
                       </span>
                       <span className='counting-icons'>%</span>
                     </div>
@@ -98,6 +100,7 @@ const SkillOne = () => {
                         id='progress-2'
                         className='progress-rate'
                         data-value={90}
+                        style={{ width: "90%" }}
                       ></div>
                     </div>
                   </div>
@@ -107,7 +110,7 @@ const SkillOne = () => {
                     <h6>Train Freight</h6>
                     <div className='progress-count-wrap'>
                       <span className='progress-count counting' data-count={75}>
-                        0
+                        75
                       </span>
                       <span className='counting-icons'>%</span>
                     </div>
@@ -118,6 +121,7 @@ const SkillOne = () => {
                         id='progress-3'
                         className='progress-rate'
                         data-value={75}
+                        style={{ width: "75%" }}
                       ></div>
                     </div>
                   </div>

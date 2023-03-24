@@ -21,14 +21,13 @@ const PartnerOne = () => {
     initialSlide: 1,
     autoplay: true,
     autoplaySpeed: 5000,
-    cssEase: "linear",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 4,
           arrows: false,
         },
       },

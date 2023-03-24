@@ -18,7 +18,7 @@ const TestimonialTwo = () => {
     speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
-    initialSlide: 1,
+    initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 5000,
     nextArrow: <SampleNextArrow />,
@@ -29,11 +29,10 @@ const TestimonialTwo = () => {
         settings: {
           slidesToShow: 3,
           infinite: true,
-          dots: true,
         },
       },
       {
-        breakpoint: 992,
+        breakpoint: 991,
         settings: {
           slidesToShow: 2,
           arrows: false,
