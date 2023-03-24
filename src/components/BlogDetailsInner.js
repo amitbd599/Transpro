@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaArrowRight,
   FaBehance,
@@ -18,8 +18,10 @@ import {
   FaTwitter,
   FaUserAlt,
 } from "react-icons/fa";
+import ModalVideo from "react-modal-video";
 
 const BlogDetailsInner = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
       {/* blog-details area start */}
@@ -84,13 +86,13 @@ const BlogDetailsInner = () => {
                   </p>
                   <div className='video-thumb-wrap pt-1 pb-4'>
                     <img src='assets/img/blog/7.png' alt='img' />
-                    <a
-                      className='video-play-btn'
-                      href='https://www.youtube.com/embed/Wimkqo8gDZ0'
+                    <span
+                      className='video-play-btn cursor-pointer'
                       data-effect='mfp-zoom-in'
+                      onClick={() => setOpen(true)}
                     >
                       <FaPlay />
-                    </a>
+                    </span>
                   </div>
                   <p>
                     Envisioneer high-quality imperatives with distributed
@@ -135,6 +137,13 @@ const BlogDetailsInner = () => {
                     </div>
                   </div>
                 </div>
+                <ModalVideo
+                  channel='youtube'
+                  autoplay
+                  isOpen={isOpen}
+                  videoId='XM6kTQPzzpQ'
+                  onClose={() => setOpen(false)}
+                />
               </div>
               <div className='blog-comment'>
                 <h4>COMMENTS(3)</h4>
