@@ -1,5 +1,6 @@
 import React from "react";
 import { FaRegCalendarAlt, FaUserAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const BlogTwo = () => {
   return (
@@ -27,9 +28,9 @@ const BlogTwo = () => {
                 </div>
                 <div className='details'>
                   <h4>
-                    <a href='blog-details.html'>
+                    <Link to='/blog-details'>
                       Express delivery is going to slow down in 2022
-                    </a>
+                    </Link>
                   </h4>
                   <ul className='blog-meta'>
                     <li>
@@ -43,9 +44,9 @@ const BlogTwo = () => {
                       <FaRegCalendarAlt /> 01 July, 2022
                     </li>
                   </ul>
-                  <a className='read-more-text' href='blog-details.html'>
+                  <Link className='read-more-text' to='/blog-details'>
                     READ MORE
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -56,9 +57,9 @@ const BlogTwo = () => {
                 </div>
                 <div className='details'>
                   <h4>
-                    <a href='blog-details.html'>
+                    <Link to='/blog-details'>
                       USA exhibition support for teneso NewYork.
-                    </a>
+                    </Link>
                   </h4>
                   <ul className='blog-meta'>
                     <li>
@@ -72,9 +73,9 @@ const BlogTwo = () => {
                       <FaRegCalendarAlt /> 01 July, 2022
                     </li>
                   </ul>
-                  <a className='read-more-text' href='blog-details.html'>
+                  <Link className='read-more-text' to='/blog-details'>
                     READ MORE
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -85,9 +86,9 @@ const BlogTwo = () => {
                 </div>
                 <div className='details'>
                   <h4>
-                    <a href='blog-details.html'>
+                    <Link to='/blog-details'>
                       New Additions to our great Metro trucks.
-                    </a>
+                    </Link>
                   </h4>
                   <ul className='blog-meta'>
                     <li>
@@ -101,9 +102,9 @@ const BlogTwo = () => {
                       <FaRegCalendarAlt /> 01 July, 2022
                     </li>
                   </ul>
-                  <a className='read-more-text' href='blog-details.html'>
+                  <Link className='read-more-text' to='/blog-details'>
                     READ MORE
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

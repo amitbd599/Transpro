@@ -3,6 +3,7 @@ import { FaPlay } from "react-icons/fa";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
 import ModalVideo from "react-modal-video";
+import { Link } from "react-router-dom";
 const AboutTwo = () => {
   const [isOpen, setOpen] = useState(false);
   return (
@@ -82,9 +83,9 @@ const AboutTwo = () => {
                       </div>
                     </div>
                     <div className='btn-wrap'>
-                      <a className='btn btn-base' href='about.html'>
+                      <Link className='btn btn-base' to='/about'>
                         DISCOVER MORE
-                      </a>
+                      </Link>
                       <div className='video-wrap d-flex align-items-center gap-2'>
                         <span
                           className='video-play-btn cursor-pointer'

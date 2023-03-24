@@ -22,7 +22,7 @@ const SearchPopup = () => {
         className={searchPopUp ? "td-search-popup active" : "td-search-popup"}
         id='td-search-popup'
       >
-        <form action='home.html' className='search-form'>
+        <form action='/home' className='search-form'>
           <div className='form-group'>
             <input
               type='text'

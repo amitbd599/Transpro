@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ContactOne = () => {
   return (
@@ -26,9 +27,9 @@ const ContactOne = () => {
                     <h3>+19524357106</h3>
                   </div>
                 </div>
-                <a className='btn btn-base' href='contact.html'>
+                <Link className='btn btn-base' to='/contact'>
                   CONTACT US
-                </a>
+                </Link>
               </div>
             </div>
           </div>

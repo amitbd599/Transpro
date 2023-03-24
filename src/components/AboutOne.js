@@ -1,6 +1,7 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
+import { Link } from "react-router-dom";
 const AboutOne = () => {
   return (
     <>
@@ -82,9 +83,9 @@ const AboutOne = () => {
                       </div>
                     </div>
                     <div className='btn-wrap'>
-                      <a className='btn btn-base' href='about.html'>
+                      <Link className='btn btn-base' to='/about'>
                         ABOUT MORE
-                      </a>
+                      </Link>
                       <div className='author-wrap'>
                         <div className='thumb'>
                           <img src='./assets/img/about/4.png' alt='img' />

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const ServiceTwo = () => {
@@ -70,9 +71,9 @@ const ServiceTwo = () => {
             </div>
             <div className='col-lg-6 text-lg-end align-self-center'>
               <div className='btn-wrap mb-5 mb-lg-0'>
-                <a className='btn btn-base' href='service.html'>
+                <Link className='btn btn-base' to='/service'>
                   VIEW ALL SERVICES
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -104,12 +105,12 @@ const ServiceTwo = () => {
                       processes with highly efficient infomediaries.
                     </p>
                     <div className='btn-wrap'>
-                      <a className='read-more-text' href='service-details.html'>
+                      <Link className='read-more-text' to='/service-details'>
                         READ MORE{" "}
                         <span>
                           <FaArrowRight />
                         </span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -140,12 +141,12 @@ const ServiceTwo = () => {
                       processes with highly efficient infomediaries.
                     </p>
                     <div className='btn-wrap'>
-                      <a className='read-more-text' href='service-details.html'>
+                      <Link className='read-more-text' to='/service-details'>
                         READ MORE{" "}
                         <span>
                           <FaArrowRight />
                         </span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -176,12 +177,12 @@ const ServiceTwo = () => {
                       processes with highly efficient infomediaries.
                     </p>
                     <div className='btn-wrap'>
-                      <a className='read-more-text' href='service-details.html'>
+                      <Link className='read-more-text' to='/service-details'>
                         READ MORE{" "}
                         <span>
                           <FaArrowRight />
                         </span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -212,12 +213,12 @@ const ServiceTwo = () => {
                       processes with highly efficient infomediaries.
                     </p>
                     <div className='btn-wrap'>
-                      <a className='read-more-text' href='service-details.html'>
+                      <Link className='read-more-text' to='/service-details'>
                         READ MORE{" "}
                         <span>
                           <FaArrowRight />
                         </span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

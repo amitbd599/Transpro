@@ -9,6 +9,7 @@ import {
   FaSearch,
 } from "react-icons/fa";
 import ModalVideo from "react-modal-video";
+import { Link } from "react-router-dom";
 
 const ServiceDetailsInner = () => {
   const [isOpen, setOpen] = useState(false);
@@ -108,52 +109,52 @@ const ServiceDetailsInner = () => {
                   </h4>
                   <ul className='catagory-items'>
                     <li>
-                      <a href='blog.html'>
+                      <Link to='/blog'>
                         Air Transportation{" "}
                         <span>
                           <FaArrowRight />
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href='blog.html'>
+                      <Link to='/blog'>
                         Sea Transportation{" "}
                         <span>
                           <FaArrowRight />
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href='blog.html'>
+                      <Link to='/blog'>
                         Warehouse{" "}
                         <span>
                           <FaArrowRight />
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href='blog.html'>
+                      <Link to='/blog'>
                         Road Transportation{" "}
                         <span>
                           <FaArrowRight />
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href='blog.html'>
+                      <Link to='/blog'>
                         Train Transportation{" "}
                         <span>
                           <FaArrowRight />
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href='blog.html'>
+                      <Link to='/blog'>
                         Land Transportation{" "}
                         <span>
                           <FaArrowRight />
                         </span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

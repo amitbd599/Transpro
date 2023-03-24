@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ServiceOneAll = () => {
   return (
@@ -39,12 +40,12 @@ const ServiceOneAll = () => {
                     human capital.
                   </p>
                   <div className='btn-wrap'>
-                    <a className='read-more-text' href='service-details.html'>
+                    <Link className='read-more-text' to='/service-details'>
                       READ MORE{" "}
                       <span>
                         <FaArrowRight />
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -67,12 +68,12 @@ const ServiceOneAll = () => {
                     human capital.
                   </p>
                   <div className='btn-wrap'>
-                    <a className='read-more-text' href='service-details.html'>
+                    <Link className='read-more-text' to='/service-details'>
                       READ MORE{" "}
                       <span>
                         <FaArrowRight />
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -95,12 +96,12 @@ const ServiceOneAll = () => {
                     human capital.
                   </p>
                   <div className='btn-wrap'>
-                    <a className='read-more-text' href='service-details.html'>
+                    <Link className='read-more-text' to='/service-details'>
                       READ MORE{" "}
                       <span>
                         <FaArrowRight />
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -123,12 +124,12 @@ const ServiceOneAll = () => {
                     human capital.
                   </p>
                   <div className='btn-wrap'>
-                    <a className='read-more-text' href='service-details.html'>
+                    <Link className='read-more-text' to='/service-details'>
                       READ MORE{" "}
                       <span>
                         <FaArrowRight />
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -151,12 +152,12 @@ const ServiceOneAll = () => {
                     human capital.
                   </p>
                   <div className='btn-wrap'>
-                    <a className='read-more-text' href='service-details.html'>
+                    <Link className='read-more-text' to='/service-details'>
                       READ MORE{" "}
                       <span>
                         <FaArrowRight />
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -179,12 +180,12 @@ const ServiceOneAll = () => {
                     human capital.
                   </p>
                   <div className='btn-wrap'>
-                    <a className='read-more-text' href='service-details.html'>
+                    <Link className='read-more-text' to='/service-details'>
                       READ MORE{" "}
                       <span>
                         <FaArrowRight />
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -10,6 +10,7 @@ import {
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const FooterTwo = () => {
   return (
@@ -81,30 +82,30 @@ const FooterTwo = () => {
                 <h4 className='widget-title'>USEFULL LINKS</h4>
                 <ul>
                   <li>
-                    <a href='about.html'>
+                    <Link to='/about'>
                       <FaArrowRight /> About Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href='service.html'>
+                    <Link to='/service'>
                       <FaArrowRight /> Services
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href='#'>
+                    <Link to='#'>
                       <FaArrowRight /> Portfolio
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href='blog.html'>
+                    <Link to='/blog'>
                       <FaArrowRight />
                       Blog
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href='contact.html'>
+                    <Link to='/contact'>
                       <FaArrowRight /> Contact Us
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

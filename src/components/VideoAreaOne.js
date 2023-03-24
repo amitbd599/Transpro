@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaPhoneAlt, FaPlay } from "react-icons/fa";
 import ModalVideo from "react-modal-video";
+import { Link } from "react-router-dom";
 const VideoAreaOne = () => {
   const [isOpen, setOpen] = useState(false);
   return (
@@ -43,9 +44,9 @@ const VideoAreaOne = () => {
                     <h3>+19524357106</h3>
                   </div>
                 </div>
-                <a className='btn btn-white' href='contact.html'>
+                <Link className='btn btn-white' to='/contact'>
                   CONTACT US
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const BannerOne = () => {
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -49,19 +50,19 @@ const BannerOne = () => {
                           virtual quality vectors with orthogonal.
                         </p>
                         <div className='btn-wrap'>
-                          <a
+                          <Link
                             className='btn btn-base b-animate-4'
-                            href='service.html'
+                            to='/service'
                           >
                             {" "}
                             Explore The Services
-                          </a>
-                          <a
+                          </Link>
+                          <Link
                             className='btn btn-white b-animate-4'
-                            href='contact.html'
+                            to='/contact'
                           >
                             Contact Us
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -89,19 +90,19 @@ const BannerOne = () => {
                           vehicle movements.
                         </p>
                         <div className='btn-wrap'>
-                          <a
+                          <Link
                             className='btn btn-base b-animate-4'
-                            href='service.html'
+                            to='/service'
                           >
                             {" "}
                             Explore The Services
-                          </a>
-                          <a
+                          </Link>
+                          <Link
                             className='btn btn-white b-animate-4'
-                            href='contact.html'
+                            to='/contact'
                           >
                             Contact Us
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>

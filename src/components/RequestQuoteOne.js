@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const RequestQuoteOne = () => {
   return (
@@ -223,9 +224,9 @@ const RequestQuoteOne = () => {
                         partnerships before granular customer service.
                         Objectively.
                       </p>
-                      <a className='btn btn-white' href='contact.html'>
+                      <Link className='btn btn-white' to='/contact'>
                         CONTACT US
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -413,9 +414,9 @@ const RequestQuoteOne = () => {
                         partnerships before granular customer service.
                         Objectively.
                       </p>
-                      <a className='btn btn-white' href='contact.html'>
+                      <Link className='btn btn-white' to='/contact'>
                         CONTACT US
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

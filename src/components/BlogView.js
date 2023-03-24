@@ -12,6 +12,7 @@ import {
   FaTwitter,
   FaUserAlt,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const BlogView = () => {
   return (
@@ -45,9 +46,9 @@ const BlogView = () => {
                     </li>
                   </ul>
                   <h2>
-                    <a href='blog-details.html'>
+                    <Link to='/blog-details'>
                       Express delivery is going to slow down
-                    </a>
+                    </Link>
                   </h2>
                   <p>
                     Phosfluorescently unleash highly efficient experiences for
@@ -56,9 +57,9 @@ const BlogView = () => {
                     embrace team building expertise. Proactively monetize
                     parallel solutions.
                   </p>
-                  <a className='btn btn-base' href='blog-details.html'>
+                  <Link className='btn btn-base' to='/blog-details'>
                     READ MORE
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='single-blog-inner style-2'>
@@ -85,9 +86,9 @@ const BlogView = () => {
                     </li>
                   </ul>
                   <h2>
-                    <a href='blog-details.html'>
+                    <Link to='/blog-details'>
                       USA exhibition support for teneso NewYork
-                    </a>
+                    </Link>
                   </h2>
                   <p>
                     Phosfluorescently unleash highly efficient experiences for
@@ -96,9 +97,9 @@ const BlogView = () => {
                     embrace team building expertise. Proactively monetize
                     parallel solutions.
                   </p>
-                  <a className='btn btn-base' href='blog-details.html'>
+                  <Link className='btn btn-base' to='/blog-details'>
                     READ MORE
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='single-blog-inner style-2'>
@@ -122,9 +123,9 @@ const BlogView = () => {
                     </li>
                   </ul>
                   <h2>
-                    <a href='blog-details.html'>
+                    <Link to='/blog-details'>
                       Express delivery is going to slow down
-                    </a>
+                    </Link>
                   </h2>
                   <p>
                     Phosfluorescently unleash highly efficient experiences for
@@ -133,9 +134,9 @@ const BlogView = () => {
                     embrace team building expertise. Proactively monetize
                     parallel solutions.
                   </p>
-                  <a className='btn btn-base' href='blog-details.html'>
+                  <Link className='btn btn-base' to='/blog-details'>
                     READ MORE
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='single-blog-inner style-2'>
@@ -162,9 +163,9 @@ const BlogView = () => {
                     </li>
                   </ul>
                   <h2>
-                    <a href='blog-details.html'>
+                    <Link to='/blog-details'>
                       New Additions to our great Metro trucks.
-                    </a>
+                    </Link>
                   </h2>
                   <p>
                     Phosfluorescently unleash highly efficient experiences for
@@ -173,9 +174,9 @@ const BlogView = () => {
                     embrace team building expertise. Proactively monetize
                     parallel solutions.
                   </p>
-                  <a className='btn btn-base' href='blog-details.html'>
+                  <Link className='btn btn-base' to='/blog-details'>
                     READ MORE
-                  </a>
+                  </Link>
                 </div>
               </div>
               <ul className='pagination'>
@@ -220,52 +221,52 @@ const BlogView = () => {
                   </h4>
                   <ul className='catagory-items'>
                     <li>
-                      <a href='blog.html'>
+                      <Link to='/blog'>
                         Air Transportation{" "}
                         <span>
                           <FaArrowRight />
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href='blog.html'>
+                      <Link to='/blog'>
                         Sea Transportation{" "}
                         <span>
                           <FaArrowRight />
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href='blog.html'>
+                      <Link to='/blog'>
                         Warehouse{" "}
                         <span>
                           <FaArrowRight />
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href='blog.html'>
+                      <Link to='/blog'>
                         Road Transportation{" "}
                         <span>
                           <FaArrowRight />
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href='blog.html'>
+                      <Link to='/blog'>
                         Train Transportation{" "}
                         <span>
                           <FaArrowRight />
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href='blog.html'>
+                      <Link to='/blog'>
                         Land Transportation{" "}
                         <span>
                           <FaArrowRight />
                         </span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
