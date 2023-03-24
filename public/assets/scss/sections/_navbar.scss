@@ -597,18 +597,22 @@
                 box-shadow: none;
                 margin-left: 0;
                 padding-bottom: 0;
-                height: auto;
                 overflow: hidden;
-                max-height: 250px;
+                max-height: 0;
                 overflow-y: scroll;
                 background-color: transparent;
                 border-radius: 10px;
                 padding: 0px;
                 border-bottom: none;
-                display: none;
-                transition: none;
-                visibility: visible;
-                opacity: 1;
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.3s linear;
+                &.active {
+                  max-height: 300px;
+
+                  visibility: visible;
+                  opacity: 1;
+                }
 
                 .sub-menu .menu-item-has-children:before {
                   content: "\f107";

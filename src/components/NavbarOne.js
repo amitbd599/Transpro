@@ -31,6 +31,19 @@ const NavbarOne = () => {
   const actionSearch = () => {
     store.dispatch(SetSearchPopUp(!searchPopUp));
   };
+
+  // Control sidebar navigation
+  let items = document.querySelectorAll(".menu-item-has-children > a");
+  for (let i in items) {
+    if (items.hasOwnProperty(i)) {
+      items[i].onclick = function () {
+        this.parentElement
+          .querySelector(".sub-menu")
+          .classList.toggle("active");
+        this.classList.toggle("open");
+      };
+    }
+  }
   return (
     <>
       {/* navbar start */}

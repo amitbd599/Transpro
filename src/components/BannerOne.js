@@ -80,7 +80,7 @@ const BannerOne = () => {
                     <div className='col-lg-7 col-md-8'>
                       <div className='banner-inner style-white'>
                         <h1 className='b-animate-2 title'>
-                          FEASIBILITY STUDY &amp; ROAD TRANSPORTATION
+                          FAST CERTIFIED &amp; BEST WORLD WIDE SERVICE
                         </h1>
                         <p className='b-animate-3 content'>
                           Our transport management solutions are designed to

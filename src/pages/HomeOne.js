@@ -33,9 +33,7 @@ const HomeOne = () => {
           <BannerOne />
 
           {/* Feature One */}
-          <div className='faq-area pd-top-120'>
-            <FeatureOne />
-          </div>
+          <FeatureOne />
 
           {/* About One */}
           <AboutOne />

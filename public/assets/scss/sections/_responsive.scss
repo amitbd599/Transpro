@@ -638,6 +638,9 @@
   .sidebar-area {
     margin-top: 40px;
   }
+  .portfolio-area .portfolio-details {
+    opacity: 1 !important;
+  }
 }
 @media all and (max-width: 767px) {
   .navbar-top {
@@ -670,6 +673,28 @@
   .breadcrumb-area .page-title {
     font-size: 52px;
     line-height: initial;
+  }
+  .portfolio-area .portfolio-details {
+    opacity: 1 !important;
+  }
+  .banner-area-2 .banner-slider .slick-next,
+  .banner-area-1 .banner-slider .slick-next {
+    bottom: 95px;
+    top: auto;
+    right: 20px;
+    margin-bottom: 30px;
+    position: absolute;
+    transform: none;
+    left: auto;
+  }
+  .banner-area-2 .banner-slider .slick-prev,
+  .banner-area-1 .banner-slider .slick-prev {
+    bottom: 95px;
+    top: auto;
+    left: 20px;
+    margin-bottom: 30px;
+    position: absolute;
+    transform: none;
   }
 }
 @media all and (max-width: 425px) {
