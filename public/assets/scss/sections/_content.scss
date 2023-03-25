@@ -1452,3 +1452,104 @@
     }
   }
 }
+
+// Support Bar
+
+.support-bar {
+  background-color: var(--button-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 40px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  .support-left {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      li {
+        display: inline-block;
+        font-size: 14px;
+        margin: 0 8px;
+        svg {
+          margin-right: 5px;
+          font-size: 20px;
+          color: #fff;
+        }
+        select {
+          text-transform: none;
+          background-color: transparent;
+          border: none;
+          color: var(--secondary-color);
+          option {
+            color: var(--main-color-2);
+          }
+        }
+        &:first-child {
+          margin-left: 0;
+        }
+        a {
+          color: var(--bg-color);
+          -webkit-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
+          &:hover {
+            color: var(--active-color);
+          }
+          i {
+            padding-right: 7px;
+            margin-left: 0px;
+            &::before {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .support-right {
+    float: right;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      li {
+        display: inline-block;
+        font-size: 14px;
+        margin: 0 8px;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          color: var(--bg-color);
+          font-size: 14px;
+          -webkit-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
+          &:hover {
+            color: var(--active-color);
+          }
+          i {
+            padding-right: 7px;
+            &::before {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

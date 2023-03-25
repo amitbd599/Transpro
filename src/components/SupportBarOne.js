@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGlobe } from "react-icons/fa";
 
 const SupportBarOne = () => {
   return (
@@ -12,7 +13,7 @@ const SupportBarOne = () => {
                 {/* support left start */}
                 <ul>
                   <li>
-                    <i className='flaticon-earth' />
+                    <FaGlobe />
                     <select className='country'>
                       <option value='english selected'>English</option>
                       <option value='Arabic'>Arabic</option>
