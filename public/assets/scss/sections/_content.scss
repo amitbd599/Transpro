@@ -1482,7 +1482,7 @@
         margin: 0 8px;
         svg {
           margin-right: 5px;
-          font-size: 20px;
+          font-size: 15px;
           color: #fff;
         }
         select {
@@ -1539,14 +1539,16 @@
           font-size: 14px;
           -webkit-transition: all 0.3s ease-in;
           transition: all 0.3s ease-in;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
           &:hover {
             color: var(--active-color);
           }
-          i {
-            padding-right: 7px;
-            &::before {
-              font-size: 14px;
-            }
+          svg {
+            margin-right: 7px;
+            font-size: 14px;
           }
         }
       }

@@ -1,5 +1,13 @@
 import React from "react";
-import { FaGlobe } from "react-icons/fa";
+import {
+  FaBuffer,
+  FaFacebookF,
+  FaGlobe,
+  FaInstagram,
+  FaTwitter,
+  FaUserAlt,
+  FaYoutube,
+} from "react-icons/fa";
 
 const SupportBarOne = () => {
   return (
@@ -46,7 +54,7 @@ const SupportBarOne = () => {
                 <ul>
                   <li className='fare-rate-responsive'>
                     <a href=''>
-                      <i className='flaticon-calculator' />
+                      <FaBuffer />
                       Get a Fare Rate
                     </a>
                   </li>
@@ -55,12 +63,12 @@ const SupportBarOne = () => {
                       <li>
                         <a href='#' target='_blank' className='facebook'>
                           {" "}
-                          <i className='fa fa-facebook-f' aria-hidden='true' />
+                          <FaFacebookF />
                         </a>
                       </li>
                       <li>
                         <a href='#' target='_blank' className='twitter'>
-                          <i className='fa fa-twitter' aria-hidden='true' />
+                          <FaTwitter />
                         </a>
                       </li>
                       <li>
@@ -69,22 +77,19 @@ const SupportBarOne = () => {
                           target='_blank'
                           className='youtube'
                         >
-                          <i
-                            className='fa fa-youtube-play'
-                            aria-hidden='true'
-                          />
+                          <FaYoutube />
                         </a>
                       </li>
                       <li>
                         <a href='#' target='_blank' className='instagram'>
-                          <i className='fa fa-instagram' aria-hidden='true' />
+                          <FaInstagram />
                         </a>
                       </li>
                     </ul>
                   </li>
-                  <li className='sign-nav'>
+                  <li className='sign-nav ps-3'>
                     <a className='sen-signin' href='#0'>
-                      <i className='flaticon-man-user' />
+                      <FaUserAlt />
                       Sign In
                     </a>
                   </li>
