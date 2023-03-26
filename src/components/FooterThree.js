@@ -2,6 +2,7 @@ import React from "react";
 import {
   FaArrowRight,
   FaFacebookF,
+  FaInstagram,
   FaLinkedinIn,
   FaMapMarkerAlt,
   FaMobileAlt,
@@ -9,6 +10,7 @@ import {
   FaRegPaperPlane,
   FaTwitter,
   FaWhatsapp,
+  FaYoutube,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -16,7 +18,7 @@ const FooterThree = () => {
   return (
     <>
       {/* footer area start  */}
-      <footer className='footer-area'>
+      <footer className='footer-area-3'>
         {/* Widget Area Starts */}
         <div className='footer-widget-area'>
           <div className='container'>
@@ -25,13 +27,10 @@ const FooterThree = () => {
                 <div className='footer-widget widget about_us_widget'>
                   <div className='footer-logo'>
                     <a href='home.html'>
-                      <img
-                        src='assets/version-2/img/logo-white.png'
-                        alt='logo'
-                      />
+                      <img src='assets/img/logo-white.png' alt='logo' />
                     </a>
                   </div>
-                  <p>
+                  <p className='text-white'>
                     Affronting everything discretion men now own did. Still
                     round match we to. Frankness pronounce daughters remainder
                     extensive has but. Building mr concerns servants in he
@@ -41,7 +40,7 @@ const FooterThree = () => {
               </div>
               <div className='col-lg-2 offset-lg-1 tab-margin-bottom-30'>
                 <div className='footer-widget widget widget_nav_menu'>
-                  <h5 className='widget-title'>Valuable link</h5>
+                  <h5 className='widget-title text-white'>Valuable link</h5>
                   <ul>
                     <li>
                       <a href='#'>Services</a>
@@ -60,7 +59,7 @@ const FooterThree = () => {
               </div>
               <div className='col-lg-2 tab-margin-bottom-30'>
                 <div className='footer-widget widget widget_nav_menu'>
-                  <h5 className='widget-title'>Address </h5>
+                  <h5 className='widget-title text-white'>Address </h5>
                   <p>813 West Livingston Drive</p>
                   <p>King Of Prussia, PA 19406</p>
                   <p>Phone: +8801-234-567-890</p>
@@ -69,7 +68,7 @@ const FooterThree = () => {
               </div>
               <div className='col-lg-3 offset-lg-1'>
                 <div className='footer-widget widget'>
-                  <h5 className='widget-title'>Latest Update</h5>
+                  <h5 className='widget-title text-white'>Latest Update</h5>
                   <p> Of friendship on inhabiting</p>
                   <p>Did friendly eat breeding</p>
                   <p>Object he barton no effect</p>
@@ -87,7 +86,7 @@ const FooterThree = () => {
               <div className='col-lg-6'>
                 <div className='copyright-text'>
                   <span>
-                    © 2019{" "}
+                    © 2022{" "}
                     <a href='#' className='active'>
                       Transpro
                     </a>{" "}
@@ -105,12 +104,12 @@ const FooterThree = () => {
                     <li>
                       <a href='#' target='_blank' className='facebook'>
                         {" "}
-                        <i className='fa fa-facebook-f' aria-hidden='true' />
+                        <FaFacebookF />
                       </a>
                     </li>
                     <li>
                       <a href='#' target='_blank' className='twitter'>
-                        <i className='fa fa-twitter' aria-hidden='true' />
+                        <FaTwitter />
                       </a>
                     </li>
                     <li>
@@ -119,12 +118,12 @@ const FooterThree = () => {
                         target='_blank'
                         className='youtube'
                       >
-                        <i className='fa fa-youtube-play' aria-hidden='true' />
+                        <FaYoutube />
                       </a>
                     </li>
                     <li>
                       <a href='#' target='_blank' className='instagram'>
-                        <i className='fa fa-instagram' aria-hidden='true' />
+                        <FaInstagram />
                       </a>
                     </li>
                   </ul>

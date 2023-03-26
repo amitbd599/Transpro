@@ -2,6 +2,7 @@ import React, { Fragment, Suspense } from "react";
 import BannerThree from "../components/BannerThree";
 import CompanyOne from "../components/CompanyOne";
 import FeatureTwo from "../components/FeatureTwo";
+import FooterThree from "../components/FooterThree";
 import LogisticsOne from "../components/LogisticsOne";
 import NavbarThree from "../components/NavbarThree";
 import ServiceThree from "../components/ServiceThree";
@@ -49,6 +50,9 @@ const HomeOneThree = () => {
 
           {/* Company One */}
           <CompanyOne />
+
+          {/* Footer Three */}
+          <FooterThree />
         </Suspense>
       </Fragment>
     </>

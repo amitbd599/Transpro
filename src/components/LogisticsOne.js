@@ -1,5 +1,6 @@
 import React from "react";
-
+import TrackVisibility from "react-on-screen";
+import CountUp from "react-countup";
 const LogisticsOne = () => {
   return (
     <>
@@ -13,7 +14,7 @@ const LogisticsOne = () => {
             <div className='col-lg-5'>
               <div className='logistics-content'>
                 <div className='section-title  text-left'>
-                  <span className='subtitle'>Our Core Values</span>
+                  <span className='subtitles'>Our Core Values</span>
                   <h2 className='title'>Global Lead Logistics</h2>
                   <p>
                     Affronting everything discretion men now own did. Still
@@ -36,7 +37,15 @@ const LogisticsOne = () => {
                         <div className='couter-icon'>
                           <i className='flaticon-box'> </i>
                         </div>
-                        <span className='counter'>45789</span>
+                        <TrackVisibility once>
+                          {({ isVisible }) =>
+                            isVisible && (
+                              <span className='counter'>
+                                <CountUp delay={0} start={0} end={4578} />
+                              </span>
+                            )
+                          }
+                        </TrackVisibility>
                         <h3 className='title'>Packages Delivered</h3>
                       </div>
                     </div>
@@ -45,7 +54,15 @@ const LogisticsOne = () => {
                         <div className='couter-icon'>
                           <i className='flaticon-group-1'> </i>
                         </div>
-                        <span className='counter'>31216</span>
+                        <TrackVisibility once>
+                          {({ isVisible }) =>
+                            isVisible && (
+                              <span className='counter'>
+                                <CountUp delay={0} start={0} end={5789} />
+                              </span>
+                            )
+                          }
+                        </TrackVisibility>
                         <h3 className='title'>Repeat Customers</h3>
                       </div>
                     </div>
@@ -54,7 +71,15 @@ const LogisticsOne = () => {
                         <div className='couter-icon'>
                           <i className='flaticon-box'> </i>
                         </div>
-                        <span className='counter'>21454</span>
+                        <TrackVisibility once>
+                          {({ isVisible }) =>
+                            isVisible && (
+                              <span className='counter'>
+                                <CountUp delay={0} start={0} end={8789} />
+                              </span>
+                            )
+                          }
+                        </TrackVisibility>
                         <h3 className='title'>Our Clients</h3>
                       </div>
                     </div>

@@ -9,11 +9,11 @@ const ShipmentOne = () => {
           <div className='row justify-content-start'>
             <div className='col-lg-5 d-flex'>
               <div className='section-title white  text-left m-auto'>
-                <span className='subtitle'>Experience</span>
+                <span className='subtitles'>Experience</span>
                 <h2 className='title'>
                   We Have More Then 15 Year Experience In Transport
                 </h2>
-                <p>
+                <p className='mt-2'>
                   Affronting everything discretion men now own did. Still round
                   match we to. Frankness pronounce daughters remainder extensive
                   has but. Happiness cordially one determine concluded fat.
@@ -21,7 +21,7 @@ const ShipmentOne = () => {
                   acuteness dejection an smallness if. Outward general passage
                   another as it.
                 </p>
-                <div className='btn-wrapper animated fadeInUpBig text-left'>
+                <div className='btn-wrapper animated fadeInUpBig text-left mt-3'>
                   <a href='#' className='boxed-btn blank-02'>
                     Contact us
                   </a>
@@ -173,27 +173,6 @@ const ShipmentOne = () => {
                   <div className='submit-shipment'>
                     <div className='row'>
                       <div className='col-lg-12'>
-                        <div className='weight'>
-                          <span>Weight</span>
-                          <div className='slidershell' id='slidershell1'>
-                            <div className='sliderfill' id='sliderfill1' />
-                            <div className='slidertrack' id='slidertrack1' />
-                            <div className='sliderthumb' id='sliderthumb1' />
-                            <div className='slidervalue' id='slidervalue1'>
-                              0
-                            </div>
-                            <input
-                              className='slider form-control'
-                              id='slider1'
-                              type='range'
-                              min={0}
-                              max={1000}
-                              defaultValue={0}
-                              oninput='showValue(value,1,false);'
-                              onchange='showValue(value,1,false);'
-                            />
-                          </div>
-                        </div>
                         <div className='shipment-process'>
                           <div className='form-group'>
                             <input
