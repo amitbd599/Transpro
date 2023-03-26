@@ -9,7 +9,7 @@ const SolutionOne = () => {
           <div className='row justify-content-center'>
             <div className='col-lg-6'>
               <div className='section-title   text-center'>
-                <span className='subtitle'>Experience</span>
+                <span className='subtitles'>Experience</span>
                 <h2 className='title'>Our Solution</h2>
                 <p>
                   Lose away off why half led have near bed. At engage simple
@@ -24,7 +24,7 @@ const SolutionOne = () => {
               <div className='solution-item'>
                 <div className='solution-image'>
                   <img
-                    src='assets/version-2/img/solution/01.png'
+                    src='assets/img/solution/01.png'
                     className='img-fluid'
                     alt='solution image'
                   />
@@ -36,7 +36,7 @@ const SolutionOne = () => {
               <div className='solution-item'>
                 <div className='solution-image'>
                   <img
-                    src='assets/version-2/img/solution/02.png'
+                    src='assets/img/solution/02.png'
                     className='img-fluid'
                     alt='solution image'
                   />
@@ -48,7 +48,7 @@ const SolutionOne = () => {
               <div className='solution-item'>
                 <div className='solution-image'>
                   <img
-                    src='assets/version-2/img/solution/03.png'
+                    src='assets/img/solution/03.png'
                     className='img-fluid'
                     alt='solution image'
                   />
@@ -60,7 +60,7 @@ const SolutionOne = () => {
               <div className='solution-item'>
                 <div className='solution-image'>
                   <img
-                    src='assets/version-2/img/solution/04.png'
+                    src='assets/img/solution/04.png'
                     className='img-fluid'
                     alt='solution image'
                   />
@@ -72,7 +72,7 @@ const SolutionOne = () => {
               <div className='solution-item'>
                 <div className='solution-image'>
                   <img
-                    src='assets/version-2/img/solution/05.png'
+                    src='assets/img/solution/05.png'
                     className='img-fluid'
                     alt='solution image'
                   />
@@ -84,7 +84,7 @@ const SolutionOne = () => {
               <div className='solution-item'>
                 <div className='solution-image'>
                   <img
-                    src='assets/version-2/img/solution/06.png'
+                    src='assets/img/solution/06.png'
                     className='img-fluid'
                     alt='solution image'
                   />

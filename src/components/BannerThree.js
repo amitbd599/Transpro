@@ -1,186 +1,111 @@
 import React from "react";
-
+import Slider from "react-slick";
+import { FaArrowLeft, FaArrowRight, FaTruckMoving } from "react-icons/fa";
+import { RiFlightTakeoffFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 const BannerThree = () => {
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return <FaArrowRight className={className} onClick={onClick} />;
+  }
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return <FaArrowLeft className={className} onClick={onClick} />;
+  }
+  const settings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    fade: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
   return (
-    <div>
-      <div className='transport-slider-area-wrapper'>
-        <div className='transport-slider'>
-          <div
-            className='transport-slider-item'
-            style={{
-              backgroundImage: "url(assets/version-2/img/slide-v1/bg-01.png)",
-            }}
-          >
-            <div className='container'>
-              <div className='row header-height1 justify-content-end'>
-                <div className='col-lg-5'>
-                  <div className='header-inner-wrap'>
-                    <div className='header-inner'>
-                      {/* header inner */}
-                      <span className='sub-title  wow fadeInDown'>
-                        Real Solutions, Real Fast!
-                      </span>
-                      <h1 className='title animated slideInRight'>
-                        We Will Transfer Anything in any Where
-                      </h1>
-                      <div className='btn-wrapper aanimated fadeInUpBig'>
-                        <a href='#' className='transport-btn'>
-                          <span>Contact for transport </span>
-                        </a>
+    <>
+      {/* banner start */}
+      <div className='banner-area banner-area-3'>
+        <div className='banner-slider owl-carousel'>
+          <Slider {...settings}>
+            <div>
+              <div
+                className='item'
+                style={{ background: "url('/assets/img/slide-v1/bg-01.png')" }}
+              >
+                <div className='container'>
+                  <div className='row'>
+                    <div className='col-lg-8'>
+                      <div className='banner-inner style-white'>
+                        <h1 className='b-animate-2 title'>
+                          We Will Transfer Anything in any Where
+                        </h1>
+                        <p className='b-animate-3 content'>
+                          Professionally strategize stand-alone functionalities
+                          and cooperative total linkage. Objectively predominate
+                          virtual quality vectors with orthogonal.
+                        </p>
+                        <div className='icon-wrap b-animate-3'>
+                          <div className='icon-file'>
+                            <FaTruckMoving /> <span>Road Transport</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    {/* //.header inner */}
-                  </div>
-                </div>
-                <div className='col-lg-7'>
-                  <div className='header-image'>
-                    <div className='header-slide-image image1'>
-                      <img
-                        src='assets/version-2/img/slide-v1/slide-01.png'
-                        className='img-fluid'
-                        alt='slide image'
-                      />
+                    <div className='col-lg-4'>
+                      <div className='img-wrap b-animate-6'>
+                        <div className='img-file'>
+                          <img src='assets/img/slide-v1/slide-01.png' alt='' />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            className='transport-slider-item'
-            style={{
-              backgroundImage: "url(assets/version-2/img/slide-v1/bg-02.png)",
-            }}
-          >
-            <div className='container'>
-              <div className='row justify-content-end'>
-                <div className='col-lg-5'>
-                  <div className='header-inner-wrap'>
-                    <div className='header-inner'>
-                      {/* header inner */}
-                      <span className='sub-title'>
-                        Real Solutions, Real Fast!
-                      </span>
-                      <h1 className='title'>
-                        We Will Transfer Anything in any Where{" "}
-                      </h1>
-                      <div className='btn-wrapper animated fadeInUpBig'>
-                        <a href='#' className='transport-btn'>
-                          <span>Contact for transport </span>
-                        </a>
+            <div>
+              <div
+                className='item'
+                style={{ background: "url('/assets/img/slide-v1/bg-03.png')" }}
+              >
+                <div className='container'>
+                  <div className='row'>
+                    <div className='col-lg-8'>
+                      <div className='banner-inner style-white'>
+                        <h1 className='b-animate-2 title'>
+                          We Will Transfer Anything in any Where
+                        </h1>
+                        <p className='b-animate-3 content'>
+                          Professionally strategize stand-alone functionalities
+                          and cooperative total linkage. Objectively predominate
+                          virtual quality vectors with orthogonal.
+                        </p>
+                        <div className='icon-wrap b-animate-3'>
+                          <div className='icon-file'>
+                            <RiFlightTakeoffFill />{" "}
+                            <span>Airlines Transport</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    {/* //.header inner */}
-                  </div>
-                </div>
-                <div className='col-lg-7'>
-                  <div className='header-image'>
-                    <div className='header-slide-image image2'>
-                      <img
-                        src='assets/version-2/img/slide-v1/slide-02.png'
-                        className='img-fluid'
-                        alt='slide image'
-                      />
+                    <div className='col-lg-4'>
+                      <div className='img-wrap b-animate-6'>
+                        <div className='img-file'>
+                          <img src='assets/img/slide-v1/slide-03.png' alt='' />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            className='transport-slider-item'
-            style={{
-              backgroundImage: "url(assets/version-2/img/slide-v1/bg-03.png)",
-            }}
-          >
-            <div className='container'>
-              <div className='row justify-content-end'>
-                <div className='col-lg-5'>
-                  <div className='header-inner-wrap'>
-                    <div className='header-inner'>
-                      {/* header inner */}
-                      <span className='sub-title'>
-                        Real Solutions, Real Fast!
-                      </span>
-                      <h1 className='title'>
-                        We Will Transfer Anything in any Where{" "}
-                      </h1>
-                      <div className='btn-wrapper animated fadeInUpBig'>
-                        <a href='#' className='transport-btn'>
-                          <span>Contact for transport </span>
-                        </a>
-                      </div>
-                    </div>
-                    {/* //.header inner */}
-                  </div>
-                </div>
-                <div className='col-lg-7'>
-                  <div className='header-image'>
-                    <div className='header-slide-image image3'>
-                      <img
-                        src='assets/version-2/img/slide-v1/slide-03.png'
-                        className='img-fluid'
-                        alt='slide image'
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </Slider>
         </div>
       </div>
-      <div className='transport-slider-progress'>
-        <span className='transport-slider-progress-bg' />
-        <span className='transport-slider-progress-is' />
-      </div>
-      <div className='slider-bottom-transport-wrapper'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-lg-9'>
-              {/* header slider area end */}
-              <div className='transport-slider-indicator'>
-                <div className='transport-slider-nav'>
-                  <div className='transport-slider-nav-active'>
-                    <div className='transport-slider-nav-item'>
-                      <a href='#'>
-                        {" "}
-                        <i className='flaticon-delivery-truck-with-packages-behind' />
-                        Road Transport{" "}
-                      </a>
-                    </div>
-                  </div>
-                  <div className='transport-slider-nav-active'>
-                    <div className='transport-slider-nav-item'>
-                      <a href='#'>
-                        <i className='flaticon-ship' />
-                        Ocean Transport{" "}
-                      </a>
-                    </div>
-                  </div>
-                  <div className='transport-slider-nav-active'>
-                    <div className='transport-slider-nav-item'>
-                      <a href='#'>
-                        {" "}
-                        <i className='flaticon-plane' />
-                        Air Transport
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* slider bottom transport wrapper  start */}
-            </div>
-            <div className='col-lg-3'>
-              <div className='transport-slider-controls'>
-                <div className='transport-slider-nav' />
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* slider bottom transport wrapper end */}
-      </div>
-    </div>
+      {/* banner end */}
+    </>
   );
 };
 

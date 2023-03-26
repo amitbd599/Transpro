@@ -63,7 +63,7 @@ const NavbarThree = () => {
             </div>
             <div className='logo'>
               <Link to='/home'>
-                <img src='assets/img/logo-white_2.png' alt='img' />
+                <img src='assets/img/logo-2.png' alt='img' />
               </Link>
             </div>
             <div className='nav-left-part'></div>

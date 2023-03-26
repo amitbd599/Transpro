@@ -220,6 +220,7 @@
   .navbar-area-1 {
     background: #fff;
   }
+
   .navbar-top .nav-phone-wrap {
     display: none;
   }
@@ -457,6 +458,29 @@
   .toggle-btn .icon-left {
     background: var(--main-color);
   }
+
+  // .navbar-area-1.navbar-area-3 {
+  //   .toggle-btn .icon-right:after,
+  //   .toggle-btn .icon-right:before,
+  //   .toggle-btn .icon-right,
+  //   .toggle-btn .icon-left:after,
+  //   .toggle-btn .icon-left:before,
+  //   .toggle-btn .icon-left {
+  //     background: #fff;
+  //   }
+  //   .toggle-btn.open .icon-right:after,
+  //   .toggle-btn.open .icon-right:before .toggle-btn.open .icon-left:after,
+  //   .toggle-btn.open .icon-left:before {
+  //     background: #fff;
+  //   }
+  //   .toggle-btn.open .icon-left {
+  //     background: var(--main-color);
+  //   }
+  //   .toggle-btn.open .icon-right {
+  //     background: var(--main-color);
+  //   }
+  // }
+
   .nav-right-part {
     margin-right: 55px;
   }

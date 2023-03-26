@@ -1,4 +1,5 @@
 import React, { Fragment, Suspense } from "react";
+import BannerThree from "../components/BannerThree";
 import CompanyOne from "../components/CompanyOne";
 import FeatureTwo from "../components/FeatureTwo";
 import LogisticsOne from "../components/LogisticsOne";
@@ -24,6 +25,9 @@ const HomeOneThree = () => {
 
           {/* Navbar Three */}
           <NavbarThree />
+
+          {/* Banner Three */}
+          <BannerThree />
 
           {/* Service Three */}
           <ServiceThree />

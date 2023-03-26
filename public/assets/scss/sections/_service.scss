@@ -354,3 +354,63 @@
     }
   }
 }
+
+// Service three
+
+.service_area-3 {
+  background-color: var(--button-color);
+  display: inline-block;
+  .service-content {
+    padding: 130px 0 130px;
+    .section-title {
+      .subtitles {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 600;
+        color: #fff;
+      }
+      .title {
+        color: #fff;
+        font-size: 40px;
+        line-height: 50px;
+      }
+      p {
+        color: #fff;
+      }
+    }
+    .service-item {
+      margin-top: 30px;
+      .service-single-item {
+        padding-top: 10px;
+        margin-bottom: 30px;
+        h3 {
+          color: var(--secondary-color);
+          font-size: 30px;
+          span {
+            color: var(--main-color);
+            padding-right: 7px;
+          }
+        }
+        p {
+          color: #fff;
+          width: 90%;
+        }
+      }
+    }
+  }
+  .service-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  p {
+    color: var(--paragraph-color);
+  }
+}
