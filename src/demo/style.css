@@ -85,9 +85,7 @@
 .demo .btn-white:hover:after {
   background: #fff;
 }
-.demo .btn-area {
-  animation: 1.5s 0.8s fadeInLeft both;
-}
+
 .demo .btn-area .btn {
   margin-right: 7px;
 }
@@ -136,6 +134,11 @@
   text-transform: capitalize;
 }
 .demo .navbar-area .nav-container .navbar-collapse .navbar-nav li a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.demo .navbar-area .nav-container .navbar-collapse .navbar-nav li a:hover {
   color: #fff;
   font-size: 16px;
   text-decoration: none;
@@ -230,7 +233,6 @@
   font-weight: 700;
   font-size: 56px;
   margin-bottom: 25px;
-  animation: 1.5s 0.4s fadeInLeft both;
 }
 .demo .banner-inner h1 span {
   color: #ffd934;
@@ -242,12 +244,7 @@
   font-size: 24px;
   line-height: 36px;
 }
-.demo .banner-inner .me-5 {
-  animation: 1.5s 0.6s fadeInLeft both;
-}
-.demo .banner-inner .banner-counter-wrap {
-  animation: 1.5s 0.7s fadeInLeft both;
-}
+
 .demo .banner-inner .single-counter-inner .details h2 {
   color: #fff;
 }
@@ -491,14 +488,6 @@
   padding-bottom: 150px;
 }
 
-.demo .typed::after {
-  content: "|";
-  display: inline;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
-}
-
 /*Removes cursor that comes with typed.js*/
 .demo .typed-cursor {
   opacity: 0;
@@ -630,7 +619,13 @@
     font-size: 16px;
   }
   .demo .main-logo img {
-    width: 160px;
+    width: 100px;
+  }
+  .demo .nav-right-part {
+    margin-right: 0;
+  }
+  .demo .btn-area {
+    margin-top: 20px;
   }
 }
 @media all and (max-width: 320px) {
@@ -642,6 +637,15 @@
   }
   .demo .nav-right-part ul li a {
     padding: 0 7px;
+  }
+  .demo .main-logo img {
+    width: 160px;
+  }
+  .navbar .nav-right-part .logo img {
+    width: 100px;
+  }
+  .navbar .nav-right-part .nav-right-part {
+    margin-right: 0;
   }
 }
 .demo .featured-item {
@@ -752,7 +756,6 @@
   position: relative;
   z-index: 0;
   text-align: center;
-  animation: ripple-white3 2.5s linear infinite;
   z-index: 9;
 }
 .demo .video-play-btn:after {

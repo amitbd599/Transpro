@@ -71,12 +71,12 @@ const ServiceOne = () => {
                     human capital.
                   </p>
                   <div className='btn-wrap'>
-                    <a className='read-more-text' href='service-details.html'>
+                    <Link className='read-more-text' to='/service-details'>
                       READ MORE{" "}
                       <span>
                         <FaArrowRight />
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -99,12 +99,12 @@ const ServiceOne = () => {
                     human capital.
                   </p>
                   <div className='btn-wrap'>
-                    <a className='read-more-text' href='service-details.html'>
+                    <Link className='read-more-text' to='/service-details'>
                       READ MORE{" "}
                       <span>
                         <FaArrowRight />
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

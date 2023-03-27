@@ -89,12 +89,6 @@ const NavbarThree = () => {
                     <li>
                       <Link to='/home-3'>Home 03</Link>
                     </li>
-                    <li>
-                      <Link to='/home-4'>Home 04</Link>
-                    </li>
-                    <li>
-                      <Link to='/home-5'>Home 05</Link>
-                    </li>
                   </ul>
                 </li>
                 <li>

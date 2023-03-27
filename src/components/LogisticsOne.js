@@ -1,6 +1,7 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
+import { FaBoxOpen, FaLayerGroup } from "react-icons/fa";
 const LogisticsOne = () => {
   return (
     <>
@@ -35,7 +36,7 @@ const LogisticsOne = () => {
                     <div className='col-lg-4 col-md-4 col-sm-4'>
                       <div className='countr wow fadeInLeft'>
                         <div className='couter-icon'>
-                          <i className='flaticon-box'> </i>
+                          <FaBoxOpen />
                         </div>
                         <TrackVisibility once>
                           {({ isVisible }) =>
@@ -52,7 +53,7 @@ const LogisticsOne = () => {
                     <div className='col-lg-4 col-md-4 col-sm-4'>
                       <div className='countr wow fadeInUp'>
                         <div className='couter-icon'>
-                          <i className='flaticon-group-1'> </i>
+                          <FaLayerGroup />
                         </div>
                         <TrackVisibility once>
                           {({ isVisible }) =>
@@ -69,7 +70,7 @@ const LogisticsOne = () => {
                     <div className='col-lg-4 col-md-4 col-sm-4'>
                       <div className='countr wow fadeInRight'>
                         <div className='couter-icon'>
-                          <i className='flaticon-box'> </i>
+                          <FaBoxOpen />
                         </div>
                         <TrackVisibility once>
                           {({ isVisible }) =>

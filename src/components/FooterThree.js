@@ -26,9 +26,9 @@ const FooterThree = () => {
               <div className='col-lg-3 tab-margin-bottom-30'>
                 <div className='footer-widget widget about_us_widget'>
                   <div className='footer-logo'>
-                    <a href='home.html'>
+                    <Link to='/home'>
                       <img src='assets/img/logo-white.png' alt='logo' />
-                    </a>
+                    </Link>
                   </div>
                   <p className='text-white'>
                     Affronting everything discretion men now own did. Still

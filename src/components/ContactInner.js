@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   FaCalculator,
   FaFileAlt,
@@ -8,16 +8,51 @@ import {
   FaRegEnvelope,
   FaUserAlt,
 } from "react-icons/fa";
-
+import emailjs from "@emailjs/browser";
+import { toast, Toaster } from "react-hot-toast";
 const ContactInner = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    // Please See Documentation for more information
+    emailjs
+      .sendForm(
+        "service_yipk4xg", //YOUR_SERVICE_ID
+        "template_71bgc2q", //YOUR_TEMPLATE_ID
+        form.current,
+        "cwf8kROl5o3__96Ti" //YOUR_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          if (result.text === "OK") {
+            toast.success("Massage Sent Successfully!");
+            form.current[0].value = "";
+            form.current[1].value = "";
+            form.current[2].value = "";
+            form.current[3].value = "";
+          }
+        },
+        (error) => {
+          if (error.text !== "OK") {
+            toast.success("Massage Not Sent!");
+          }
+        }
+      );
+  };
   return (
     <>
+      <Toaster position='bottom-center' reverseOrder={false} />
       {/* contact area start */}
       <div className='container'>
         <div className='contact-area mg-top-120 mb-120'>
           <div className='row g-0 justify-content-center'>
             <div className='col-lg-7'>
-              <form className='contact-form text-center'>
+              <form
+                className='contact-form text-center'
+                ref={form}
+                onSubmit={sendEmail}
+              >
                 <h3>GET A QUOTE</h3>
                 <div className='row'>
                   <div className='col-md-6'>
@@ -25,7 +60,11 @@ const ContactInner = () => {
                       <label>
                         <FaUserAlt />
                       </label>
-                      <input type='text' placeholder='Your name' />
+                      <input
+                        type='text'
+                        placeholder='Your name'
+                        name='user_name'
+                      />
                     </div>
                   </div>
                   <div className='col-md-6'>
@@ -33,7 +72,11 @@ const ContactInner = () => {
                       <label>
                         <FaRegEnvelope />
                       </label>
-                      <input type='text' placeholder='Your email' />
+                      <input
+                        type='text'
+                        placeholder='Your email'
+                        name='user_email'
+                      />
                     </div>
                   </div>
                   <div className='col-md-6'>
@@ -61,14 +104,18 @@ const ContactInner = () => {
                       <label>
                         <FaPencilAlt />
                       </label>
-                      <textarea placeholder='Write massage' defaultValue={""} />
+                      <textarea
+                        placeholder='Write massage'
+                        defaultValue={""}
+                        id='massage'
+                      />
                     </div>
                   </div>
                   <div className='col-12'>
-                    <a className='btn btn-base' href='#'>
+                    <button className='btn btn-base' type='submit'>
                       {" "}
                       SEND MESSAGE
-                    </a>
+                    </button>
                   </div>
                 </div>
               </form>

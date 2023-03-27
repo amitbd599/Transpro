@@ -4,6 +4,8 @@ import {
   FaFacebookF,
   FaGlobe,
   FaInstagram,
+  FaPhoneAlt,
+  FaRegEnvelope,
   FaTwitter,
   FaUserAlt,
   FaYoutube,
@@ -31,7 +33,7 @@ const SupportBarOne = () => {
                   </li>
                   <li>
                     <a href='mailTo:example@example.com'>
-                      <i className='flaticon-at' />
+                      <FaRegEnvelope />
                       example@example.com
                     </a>
                   </li>
@@ -39,7 +41,7 @@ const SupportBarOne = () => {
                     {" "}
                     <a href='tel:+8801-728-123-456'>
                       {" "}
-                      <i className='flaticon-call-answer' />
+                      <FaPhoneAlt />
                       +8801-728-123-456
                     </a>
                   </li>

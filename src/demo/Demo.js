@@ -125,10 +125,10 @@ const Demo = () => {
             <div className='col-lg-10 align-self-center'>
               <div className='banner-inner text-xl-start text-center'>
                 <h1>
-                  TransPro - Transport &amp; Logistics Service HTML Template
+                  TransPro - Transport &amp; Logistics Service React Template
                 </h1>
                 <p className='me-5'>
-                  TransPro is ransport &amp; Logistics Service HTML theme built
+                  TransPro is ransport &amp; Logistics Service React theme built
                   for an array of services with a number of transport and
                   logistics institutions in mind.
                 </p>
@@ -284,38 +284,19 @@ const Demo = () => {
                 </Link>
               </div>
             </div>
+
             <div className='col-lg-4 col-md-6'>
               <div
-                className='inner-item style-large wow animated fadeInUp'
+                className='inner-item style-large wow animated fadeInUp coming-soon'
                 data-wow-duration='1.5s'
                 data-wow-delay='0.4s'
               >
-                <Link to='/home-4'>
+                <a href='#'>
                   <span className='thumb'>
                     <img src='assets/demo-img/4.png' alt='img' />
                   </span>
-                  Home V.4
-                </Link>
-                <Link className='btn btn-base' to='/home-4'>
-                  Live Demo
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-              <div
-                className='inner-item style-large wow animated fadeInUp'
-                data-wow-duration='1.5s'
-                data-wow-delay='0.4s'
-              >
-                <Link to='/home-5'>
-                  <span className='thumb'>
-                    <img src='assets/demo-img/5.png' alt='img' />
-                  </span>
-                  Home V.5
-                </Link>
-                <Link className='btn btn-base' to='/home-5'>
-                  Live Demo
-                </Link>
+                  <span className='cm-soon-title'>Coming Soon Home-4</span>
+                </a>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -328,7 +309,7 @@ const Demo = () => {
                   <span className='thumb'>
                     <img src='assets/demo-img/4.png' alt='img' />
                   </span>
-                  <span className='cm-soon-title'>Comming Soon</span>
+                  <span className='cm-soon-title'>Coming Soon Home-5</span>
                 </a>
               </div>
             </div>
@@ -614,7 +595,7 @@ const Demo = () => {
                 data-wow-delay='0.6s'
               >
                 <img src='assets/demo-img/featured/4.png' alt='img' />
-                Font-Awesome
+                React Icons
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -624,7 +605,7 @@ const Demo = () => {
                 data-wow-delay='0.2s'
               >
                 <img src='assets/demo-img/featured/2.png' alt='img' />
-                Owl-Carousel
+                React-slick
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -633,8 +614,8 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.4s'
               >
-                <img src='assets/demo-img/featured/5.png' alt='img' />
-                HTML5
+                <img src='assets/demo-img/featured/react.png' alt='img' />
+                React
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -654,7 +635,7 @@ const Demo = () => {
                 data-wow-delay='0.2s'
               >
                 <img src='assets/demo-img/featured/7.png' alt='img' />
-                Jquery Tilt
+                NPM
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -683,8 +664,8 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.2s'
               >
-                <img src='assets/demo-img/featured/10.png' alt='img' />
-                Magnific Popup
+                <img src='assets/demo-img/featured/8.png' alt='img' />
+                Updated Version
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -733,8 +714,8 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.6s'
               >
-                <img src='assets/demo-img/featured/13.png' alt='img' />
-                Wow Js
+                <img src='assets/demo-img/featured/15.png' alt='img' />
+                React Visibility Sensor
               </div>
             </div>
           </div>
