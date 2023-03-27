@@ -28,6 +28,7 @@ const CompanyOne = () => {
         breakpoint: 992,
         settings: {
           slidesToShow: 4,
+          slidesToScroll: 1,
           arrows: false,
         },
       },

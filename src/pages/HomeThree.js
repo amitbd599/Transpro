@@ -13,7 +13,7 @@ import TestimonialThree from "../components/TestimonialThree";
 import Preloader from "../elements/Preloader";
 const SigninPopup = React.lazy(() => import("../components/SigninPopup"));
 
-const HomeOneThree = () => {
+const HomeThree = () => {
   return (
     <>
       <Fragment>
@@ -59,4 +59,4 @@ const HomeOneThree = () => {
   );
 };
 
-export default HomeOneThree;
+export default HomeThree;

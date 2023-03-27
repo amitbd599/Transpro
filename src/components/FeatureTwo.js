@@ -18,7 +18,7 @@ const FeatureTwo = () => {
       >
         <div className='container'>
           <div className='row justify-content-center'>
-            <div className='col-lg-6'>
+            <div className='col-xl-6'>
               <div className='features-item'>
                 <div className='single-features-item'>
                   <div className='icon'>
@@ -46,7 +46,7 @@ const FeatureTwo = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-6 d-flex'>
+            <div className='col-xl-6 d-flex'>
               <div className='section-title white  text-left m-auto'>
                 <span className='subtitles'>Our Features</span>
                 <h2 className='title active'>Why Choose Us!</h2>

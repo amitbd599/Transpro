@@ -225,9 +225,13 @@
     .footer-social {
       float: right;
       text-align: right;
+
       .social-link {
         margin: 0;
         padding: 0;
+        display: flex;
+        gap: 8px;
+        align-items: center;
 
         li {
           display: inline-flex;
