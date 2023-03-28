@@ -556,6 +556,9 @@
   .demo .banner-area {
     padding: 228px 0px 218px;
   }
+  .demo .banner-inner .btn-area {
+    margin-top: 30px;
+  }
 }
 @media all and (max-width: 991px) {
   .demo .nav-right-part-mobile {
@@ -563,6 +566,9 @@
   }
   .demo .banner-inner h1 {
     font-size: 70px;
+  }
+  .demo .counter-area-inner {
+    margin-bottom: 60px;
   }
 }
 @media all and (max-width: 575px) {
@@ -575,9 +581,13 @@
   .demo .counter-area {
     transform: translateY(0);
     margin-top: 140px;
+    display: none;
   }
   .demo .single-counter-inner h2 {
     font-size: 30px;
+  }
+  .demo .pd-top-180 {
+    padding-top: 80px;
   }
 }
 @media all and (max-width: 767px) {
