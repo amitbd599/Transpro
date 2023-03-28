@@ -714,7 +714,7 @@ const Demo = () => {
                 data-wow-duration='1.5s'
                 data-wow-delay='0.6s'
               >
-                <img src='assets/demo-img/featured/15.png' alt='img' />
+                <img src='assets/demo-img/featured/13.png' alt='img' />
                 React Visibility Sensor
               </div>
             </div>
