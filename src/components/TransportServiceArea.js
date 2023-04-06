@@ -18,7 +18,7 @@ const TransportServiceArea = () => {
             <div className='col-lg-6'>
               <div className='transport-service-image wow fadeInLeft'>
                 <img
-                  src='assets/version-2/img/service/01.png'
+                  src='assets/img/service/01.png'
                   className='img-fluid'
                   alt='transport-service images'
                 />
@@ -49,10 +49,10 @@ const TransportServiceArea = () => {
             </div>
           </div>
           <div className='row transport-service-single'>
-            <div className='col-lg-6 offset-lg-1 order-lg-12'>
+            <div className='col-lg-6 offset-lg-1 order-lg-2'>
               <div className='transport-service-image wow fadeInRight'>
                 <img
-                  src='assets/version-2/img/service/02.png'
+                  src='assets/img/service/02.png'
                   className='img-fluid'
                   alt='transport-service images'
                 />
@@ -65,7 +65,7 @@ const TransportServiceArea = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-4 offset-lg-1 d-flex  order-lg-1'>
+            <div className='col-lg-4 offset-lg-1 d-flex '>
               <div className='transport-service-content wow fadeInLeft'>
                 <h3 className='title'>Fly Anywhere</h3>
                 <p>
@@ -86,7 +86,7 @@ const TransportServiceArea = () => {
             <div className='col-lg-6'>
               <div className='transport-service-image wow fadeInLeft'>
                 <img
-                  src='assets/version-2/img/service/03.png'
+                  src='assets/img/service/03.png'
                   className='img-fluid'
                   alt='transport-service images'
                 />
