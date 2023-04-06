@@ -1,26 +1,24 @@
 import React, { Fragment, Suspense } from "react";
-import BannerThree from "../components/BannerThree";
-import CompanyOne from "../components/CompanyOne";
-import FeatureTwo from "../components/FeatureTwo";
-import FooterThree from "../components/FooterThree";
-import LogisticsOne from "../components/LogisticsOne";
-import NavbarThree from "../components/NavbarThree";
-import ServiceThree from "../components/ServiceThree";
-import ShipmentOne from "../components/ShipmentOne";
-import SolutionOne from "../components/SolutionOne";
-import SupportBarOne from "../components/SupportBarOne";
-import TestimonialThree from "../components/TestimonialThree";
 import Preloader from "../elements/Preloader";
-const SigninPopup = React.lazy(() => import("../components/SigninPopup"));
+const BannerThree = React.lazy(() => import("../components/BannerThree"));
+const CompanyOne = React.lazy(() => import("../components/CompanyOne"));
+const FeatureTwo = React.lazy(() => import("../components/FeatureTwo"));
+const FooterThree = React.lazy(() => import("../components/FooterThree"));
+const LogisticsOne = React.lazy(() => import("../components/LogisticsOne"));
+const NavbarThree = React.lazy(() => import("../components/NavbarThree"));
+const ServiceThree = React.lazy(() => import("../components/ServiceThree"));
+const ShipmentOne = React.lazy(() => import("../components/ShipmentOne"));
+const SolutionOne = React.lazy(() => import("../components/SolutionOne"));
+const SupportBarOne = React.lazy(() => import("../components/SupportBarOne"));
+const TestimonialThree = React.lazy(() =>
+  import("../components/TestimonialThree")
+);
 
 const HomeThree = () => {
   return (
     <>
       <Fragment>
         <Suspense fallback={<Preloader />}>
-          {/* Search Popup */}
-          {/* <SigninPopup /> */}
-
           {/* SupportBarOne */}
           <SupportBarOne />
 
