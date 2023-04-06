@@ -106,6 +106,15 @@
   .single-service-wrap {
     transform: translate(0px, 47%);
   }
+
+  .features-area.style-02 .features-item .single-features-item {
+    padding: 90px 10px;
+    width: 240px;
+    height: 240px;
+  }
+  .features-area.style-02 {
+    padding: 130px 0 35px;
+  }
 }
 @media all and (max-width: 1440px) {
   .wcu-area .img-1 {

@@ -15,9 +15,9 @@ const FeatureThree = () => {
           <div className='row justify-content-start'>
             <div className='col-lg-4 offset-lg-1 d-flex'>
               <div className='section-title white  text-left m-auto'>
-                <span className='subtitle'>Our Features</span>
+                <span className='subtitles'>Our Features</span>
                 <h2 className='title active'>Why Choose Us!</h2>
-                <p>
+                <p className='des'>
                   Affronting everything discretion men now own did. Still round
                   match we to. Frankness pronounce daughters remainder extensive
                   has but. Happiness cordially one determine concluded fat.
@@ -26,7 +26,7 @@ const FeatureThree = () => {
                   another as it.
                 </p>
                 <div className='btn-wrapper animated fadeInUpBig text-left'>
-                  <a href='#' className='boxed-btn btn-bounce'>
+                  <a href='#' className='boxed-btn btn-bounce mt-3'>
                     Contact us
                   </a>
                 </div>
