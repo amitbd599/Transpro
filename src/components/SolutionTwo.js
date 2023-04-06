@@ -4,7 +4,10 @@ const SolutionTwo = () => {
   return (
     <>
       {/* Start Solution area  */}
-      <div className='solution_area style-02'>
+      <div
+        className='solution_area style-02'
+        style={{ backgroundImage: "url('assets/img/bg/solution-bg.png')" }}
+      >
         <div className='container-fluid'>
           <div className='row justify-content-end'>
             <div className='col-lg-5'>
@@ -22,7 +25,7 @@ const SolutionTwo = () => {
                   <div className='solution-item'>
                     <div className='solution-image'>
                       <img
-                        src='assets/version-2/img/solution/01.png'
+                        src='assets/img/solution/01.png'
                         className='img-fluid'
                         alt='solution image'
                       />
@@ -34,7 +37,7 @@ const SolutionTwo = () => {
                   <div className='solution-item'>
                     <div className='solution-image'>
                       <img
-                        src='assets/version-2/img/solution/02.png'
+                        src='assets/img/solution/02.png'
                         className='img-fluid'
                         alt='solution image'
                       />
@@ -46,7 +49,7 @@ const SolutionTwo = () => {
                   <div className='solution-item'>
                     <div className='solution-image'>
                       <img
-                        src='assets/version-2/img/solution/03.png'
+                        src='assets/img/solution/03.png'
                         className='img-fluid'
                         alt='solution image'
                       />
@@ -58,7 +61,7 @@ const SolutionTwo = () => {
                   <div className='solution-item'>
                     <div className='solution-image'>
                       <img
-                        src='assets/version-2/img/solution/04.png'
+                        src='assets/img/solution/04.png'
                         className='img-fluid'
                         alt='solution image'
                       />
@@ -70,7 +73,7 @@ const SolutionTwo = () => {
                   <div className='solution-item'>
                     <div className='solution-image'>
                       <img
-                        src='assets/version-2/img/solution/05.png'
+                        src='assets/img/solution/05.png'
                         className='img-fluid'
                         alt='solution image'
                       />
@@ -82,7 +85,7 @@ const SolutionTwo = () => {
                   <div className='solution-item'>
                     <div className='solution-image'>
                       <img
-                        src='assets/version-2/img/solution/06.png'
+                        src='assets/img/solution/06.png'
                         className='img-fluid'
                         alt='solution image'
                       />
@@ -93,7 +96,11 @@ const SolutionTwo = () => {
               </div>
             </div>
             <div className='col-lg-5 offset-lg-1 remove-col-padding'>
-              <div className='solution-bg'></div>
+              <div className='solution-bg'>
+                <div className='img-file'>
+                  <img src='assets/img/solution/solution-bg.png' alt='' />
+                </div>
+              </div>
             </div>
           </div>
         </div>
