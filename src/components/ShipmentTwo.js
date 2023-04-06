@@ -9,7 +9,7 @@ const ShipmentTwo = () => {
           <div className='row'>
             <div className='col-lg-5 d-flex'>
               <div className='section-title text-left m-auto'>
-                <span className='subtitle'>Experience</span>
+                <span className='subtitles'>Experience</span>
                 <h2 className='title'>
                   We Have More Then 15 Year Experience In Transport
                 </h2>
@@ -22,7 +22,7 @@ const ShipmentTwo = () => {
                   another as it.
                 </p>
                 <div className='btn-wrapper animated fadeInUpBig text-left'>
-                  <a href='#' className='boxed-btn btn-bounce '>
+                  <a href='#' className='boxed-btn btn-bounce mt-3'>
                     Contact us
                   </a>
                 </div>
@@ -173,27 +173,6 @@ const ShipmentTwo = () => {
                   <div className='submit-shipment'>
                     <div className='row'>
                       <div className='col-lg-12'>
-                        <div className='weight'>
-                          <span>Weight</span>
-                          <div className='slidershell' id='slidershell1'>
-                            <div className='sliderfill' id='sliderfill1' />
-                            <div className='slidertrack' id='slidertrack1' />
-                            <div className='sliderthumb' id='sliderthumb1' />
-                            <div className='slidervalue' id='slidervalue1'>
-                              0
-                            </div>
-                            <input
-                              className='slider form-control'
-                              id='slider1'
-                              type='range'
-                              min={0}
-                              max={1000}
-                              defaultValue={0}
-                              oninput='showValue(value,1,false);'
-                              onchange='showValue(value,1,false);'
-                            />
-                          </div>
-                        </div>
                         <div className='shipment-process'>
                           <div className='form-group'>
                             <input
