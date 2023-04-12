@@ -1,7 +1,7 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
-import { FaBoxOpen, FaLayerGroup } from "react-icons/fa";
+import { FaBoxOpen, FaLayerGroup, FaRssSquare } from "react-icons/fa";
 const LogisticsTwo = () => {
   return (
     <>
@@ -36,27 +36,51 @@ const LogisticsTwo = () => {
                     <div className='col-lg-4 col-md-4 col-sm-4'>
                       <div className='countr wow fadeInLeft'>
                         <div className='couter-icon'>
-                          <i className='flaticon-box'> </i>
+                          <FaBoxOpen />
                         </div>
-                        <span className='counter'>45789</span>
+                        <TrackVisibility once>
+                          {({ isVisible }) =>
+                            isVisible && (
+                              <span className='counter'>
+                                <CountUp delay={0} start={0} end={45789} />
+                              </span>
+                            )
+                          }
+                        </TrackVisibility>
                         <h3 className='title'>Packages Delivered</h3>
                       </div>
                     </div>
                     <div className='col-lg-4 col-md-4 col-sm-4'>
                       <div className='countr wow fadeInUp'>
                         <div className='couter-icon'>
-                          <i className='flaticon-group-1'> </i>
+                          <FaLayerGroup />
                         </div>
-                        <span className='counter'>31216</span>
+                        <TrackVisibility once>
+                          {({ isVisible }) =>
+                            isVisible && (
+                              <span className='counter'>
+                                <CountUp delay={0} start={0} end={31216} />
+                              </span>
+                            )
+                          }
+                        </TrackVisibility>
                         <h3 className='title'>Repeat Customers</h3>
                       </div>
                     </div>
                     <div className='col-lg-4 col-md-4 col-sm-4'>
                       <div className='countr wow fadeInRight'>
                         <div className='couter-icon'>
-                          <i className='flaticon-box'> </i>
+                          <FaRssSquare />
                         </div>
-                        <span className='counter'>21454</span>
+                        <TrackVisibility once>
+                          {({ isVisible }) =>
+                            isVisible && (
+                              <span className='counter'>
+                                <CountUp delay={0} start={0} end={21454} />
+                              </span>
+                            )
+                          }
+                        </TrackVisibility>
                         <h3 className='title'>Our Clients</h3>
                       </div>
                     </div>

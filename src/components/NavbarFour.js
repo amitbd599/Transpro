@@ -18,10 +18,6 @@ const NavbarFour = () => {
       return () => (window.onscroll = null);
     };
   }, []);
-  const searchPopUp = useSelector((state) => state.clickAction.searchPopUp);
-  const actionSearch = () => {
-    store.dispatch(SetSearchPopUp(!searchPopUp));
-  };
 
   // Control sidebar navigation
   let items = document.querySelectorAll(".menu-item-has-children > a");
@@ -74,19 +70,19 @@ const NavbarFour = () => {
                 <a href='home.html'>Home</a>
                 <ul className='sub-menu'>
                   <li>
-                    <a href='home.html'>Home 01</a>
+                    <Link to='/home'>Home 01</Link>
                   </li>
                   <li>
-                    <a href='home-2.html'>Home 02</a>
+                    <Link to='/home-2'>Home 02</Link>
                   </li>
                   <li>
-                    <a href='home-3.html'>Home 03</a>
+                    <Link to='/home-3'>Home 03</Link>
                   </li>
                   <li>
-                    <a href='home-4.html'>Home 04</a>
+                    <Link to='/home-4'>Home 04</Link>
                   </li>
                   <li>
-                    <a href='home-5.html'>Home 05</a>
+                    <Link to='/home-5'>Home 05</Link>
                   </li>
                 </ul>
               </li>
@@ -94,28 +90,28 @@ const NavbarFour = () => {
                 <a href='#'>Pages</a>
                 <ul className='sub-menu'>
                   <li>
-                    <a href='about.html'>About</a>
+                    <Link to='/about'>About</Link>
                   </li>
                   <li>
-                    <a href='blog.html'>Blog</a>
+                    <Link to='/blog'>Blog</Link>
                   </li>
                   <li>
-                    <a href='blog-details.html'>Blog Details</a>
+                    <Link to='/blog-details'>Blog Details</Link>
                   </li>
                   <li>
-                    <a href='service.html'>Service</a>
+                    <Link to='/service'>Service</Link>
                   </li>
                   <li>
-                    <a href='service-details.html'>Service Details</a>
+                    <Link to='/service-details'>Service Details</Link>
                   </li>
                   <li>
-                    <a href='pricing.html'>Pricing</a>
+                    <Link to='/pricing'>Pricing</Link>
                   </li>
                   <li>
-                    <a href='faq.html'>FAQ</a>
+                    <Link to='/faq'>FAQ</Link>
                   </li>
                   <li>
-                    <a href='contact.html'>Contact</a>
+                    <Link to='/contact'>Contact</Link>
                   </li>
                 </ul>
               </li>
@@ -123,18 +119,18 @@ const NavbarFour = () => {
                 <a href='#'>Services</a>
                 <ul className='sub-menu'>
                   <li>
-                    <a href='service.html'>Services</a>
+                    <Link to='/service.html'>Services</Link>
                   </li>
                   <li>
-                    <a href='service-details.html'>Services Details</a>
+                    <Link to='/service-details'>Services Details</Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href='about.html'>About us</a>
+                <Link to='/about'>About us</Link>
               </li>
               <li>
-                <a href='contact.html'>Contact</a>
+                <Link to='/contact'>Contact</Link>
               </li>
             </ul>
           </div>

@@ -45,9 +45,6 @@ const HomeFour = () => {
           {/* Company One */}
           <CompanyOne />
 
-          {/* Feature Three */}
-          <FeatureThree />
-
           {/* Footer Three */}
           <FooterThree />
         </Suspense>

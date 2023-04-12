@@ -1,8 +1,10 @@
 import React from "react";
 import {
+  FaBox,
   FaMoneyBillAlt,
   FaShieldAlt,
   FaToolbox,
+  FaTruck,
   FaTruckMoving,
 } from "react-icons/fa";
 
@@ -38,27 +40,27 @@ const FeatureThree = () => {
                   <div className='col-lg-6'>
                     <div className='single-features-item'>
                       <div className='icon'>
-                        <i className='flaticon-money-bag' />
+                        <FaMoneyBillAlt />
                       </div>
                       <h4>Transparent Pricing</h4>
                     </div>
                     <div className='single-features-item'>
                       <div className='icon'>
-                        <i className='flaticon-delivery-truck' />
+                        <FaTruck />
                       </div>
                       <h4>Warehouse Storage</h4>
                     </div>
                   </div>
-                  <div className='col-lg-6 margin-top-60'>
+                  <div className='col-lg-6 mg-top-60'>
                     <div className='single-features-item'>
                       <div className='icon'>
-                        <i className='flaticon-box' />
+                        <FaBox />
                       </div>
                       <h4> Real-Time Tracking</h4>
                     </div>
                     <div className='single-features-item'>
                       <div className='icon'>
-                        <i className='flaticon-shield' />
+                        <FaShieldAlt />
                       </div>
                       <h4> Security For Cargo</h4>
                     </div>
