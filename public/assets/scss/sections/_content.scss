@@ -1644,7 +1644,7 @@
     }
   }
   &.style-03 {
-    padding: 195px 0 120px;
+    padding: 130px 0 50px;
     // background: url(../img/bg/solution-bg.png) no-repeat center;
     background-size: cover;
     background-position: center;
@@ -1652,25 +1652,39 @@
     .solution-item {
       margin-bottom: 30px;
     }
+    .remove-col-padding {
+      position: relative;
+    }
     .solution-bg {
-      // background: url(../img/solution/solution-bg.png) no-repeat center;
       background-size: cover;
       height: 100%;
       display: block;
-      &:after {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: block;
-        background: #ffdbdb 0% 0% no-repeat padding-box;
-        opacity: 1;
-        z-index: -1;
-        content: "";
-        left: 9%;
-        top: -10%;
+      background-size: cover;
+      height: 100%;
+      display: block;
+      z-index: 1;
+      position: relative;
+      right: 100px;
+      top: 45px;
+      .img-file {
+        position: relative;
+        z-index: 1;
+        &:after {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: block;
+          background: #ffdbdb 0% 0% no-repeat padding-box;
+          opacity: 1;
+          z-index: -1;
+          content: "";
+          right: -10%;
+          top: -10%;
+        }
       }
     }
   }
+
   .section-title {
     .subtitles {
       color: var(--main-color);
@@ -1917,6 +1931,19 @@
   }
   &.style-03 {
     background-color: #f5f5f5;
+    .section-title {
+      .title {
+        color: var(--heading-color);
+      }
+      .sub-title {
+        color: var(--paragraph-color);
+      }
+      .btn-wrapper {
+        a {
+          background: var(--main-color);
+        }
+      }
+    }
   }
 
   .section-title {
@@ -2320,14 +2347,30 @@
   &.style-03 {
     padding: 130px 0px 100px;
     background: var(--button-color);
+    .title {
+      color: var(--secondary-color);
+    }
+    .sub-title {
+      color: var(--secondary-color);
+      font-size: 15px;
+    }
     .single-service-item {
       margin-bottom: 30px;
+      padding: 15px;
+      border-radius: 5px;
+      cursor: pointer;
       h3 {
-        margin-top: 30px;
+        margin-top: 20px;
+        font-size: 26px;
         color: var(--secondary-color);
       }
       p {
+        font-size: 15px;
         color: var(--bg-color);
+      }
+      &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #ffffff31;
       }
     }
   }

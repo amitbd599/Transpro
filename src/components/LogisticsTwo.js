@@ -6,7 +6,7 @@ const LogisticsTwo = () => {
   return (
     <>
       {/* Start Logistics area  */}
-      <div className='logistics_area style-02'>
+      <div className='logistics_area style-02 pt-5 pb-0'>
         <div className='container-fluid'>
           <div className='row justify-content-start'>
             <div className='col-lg-6 remove-col-padding'>

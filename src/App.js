@@ -17,6 +17,7 @@ import Contact from "./pages/Contact";
 import RouteScrollToTop from "./elements/RouteScrollToTop";
 import HomeThree from "./pages/HomeThree";
 import HomeFour from "./pages/HomeFour";
+import HomeFive from "./pages/HomeFive";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -35,6 +36,7 @@ function App() {
         <Route exact path='/home-2' element={<HomeTwo />} />
         <Route exact path='/home-3' element={<HomeThree />} />
         <Route exact path='/home-4' element={<HomeFour />} />
+        <Route exact path='/home-5' element={<HomeFive />} />
         <Route exact path='/about' element={<About />} />
         <Route exact path='/service' element={<Service />} />
         <Route exact path='/service-details' element={<ServiceDetails />} />
