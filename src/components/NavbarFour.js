@@ -1,23 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
-import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { SetSearchPopUp } from "../redux/stateSlice/clickActionSlice";
-import store from "../redux/store/store";
 const NavbarFour = () => {
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState(false);
-
-  useEffect(() => {
-    window.onscroll = () => {
-      if (window.pageYOffset < 300) {
-        setActive(false);
-      } else if (window.pageYOffset > 300) {
-        setActive(true);
-      }
-      return () => (window.onscroll = null);
-    };
-  }, []);
 
   // Control sidebar navigation
   let items = document.querySelectorAll(".menu-item-has-children > a");
@@ -38,9 +23,9 @@ const NavbarFour = () => {
         <div className='container nav-container'>
           <div className='responsive-mobile-menu'>
             <div className='logo-wrapper'>
-              <a href='home.html' className='logo'>
+              <Link to='/home' className='logo'>
                 <img src='assets/img/logo-2.png' alt='img' />
-              </a>
+              </Link>
             </div>
             <button
               onClick={() => setOpen(!open)}
@@ -67,7 +52,7 @@ const NavbarFour = () => {
           >
             <ul className='navbar-nav'>
               <li className='menu-item-has-children current-menu-item'>
-                <a href='home.html'>Home</a>
+                <Link to='/home'>Home</Link>
                 <ul className='sub-menu'>
                   <li>
                     <Link to='/home'>Home 01</Link>
@@ -119,7 +104,7 @@ const NavbarFour = () => {
                 <a href='#'>Services</a>
                 <ul className='sub-menu'>
                   <li>
-                    <Link to='/service.html'>Services</Link>
+                    <Link to='/service'>Services</Link>
                   </li>
                   <li>
                     <Link to='/service-details'>Services Details</Link>

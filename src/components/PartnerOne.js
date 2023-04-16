@@ -4,11 +4,11 @@ import Slider from "react-slick";
 
 const PartnerOne = () => {
   function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return <FaArrowLeft className={className} onClick={onClick} />;
   }
   function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return <FaArrowRight className={className} onClick={onClick} />;
   }
   const settings = {

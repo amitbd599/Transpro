@@ -328,7 +328,7 @@
     padding: 12px 0px !important;
     .navbar-collapse .navbar-nav {
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
     }
   }
   &:after {
@@ -361,7 +361,7 @@
     padding: 12px 0px !important;
     .navbar-collapse .navbar-nav {
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
     }
   }
   &:after {

@@ -719,6 +719,18 @@
   .features-area.style-02 .features-item .single-features-item h4 {
     font-size: 22px;
   }
+  .home-area.home-v3 .header-bg .right-wrapper {
+    margin-left: 0;
+  }
+  .solution_area.style-03 .solution-bg {
+    right: 0;
+  }
+  .solution_area.style-03 .solution {
+    margin-top: 100px;
+  }
+  .solution_area.style-03 .solution-item {
+    text-align: center;
+  }
 }
 @media all and (max-width: 767px) {
   .navbar-top {
@@ -919,6 +931,9 @@
     float: left;
     text-align: right;
   }
+  .home-area.home-v3 .header-bg .right-wrapper h2 {
+    font-size: 22px;
+  }
 }
 @media all and (max-width: 375px) {
   .navbar-area-1.navbar-area-3 .logo {
@@ -1055,6 +1070,9 @@
     float: left;
     text-align: right;
   }
+  .home-area.home-v3 .header-bg .right-wrapper h2 {
+    font-size: 22px;
+  }
 }
 @media all and (max-width: 320px) {
   .banner-area-2 .banner-inner .btn-wrap .btn-base,
@@ -1067,5 +1085,8 @@
   }
   .contact-information-wrap .single-contact-info-wrap {
     padding: 23px 20px 17px;
+  }
+  .home-area.home-v3 .header-bg .right-wrapper h2 {
+    font-size: 22px;
   }
 }

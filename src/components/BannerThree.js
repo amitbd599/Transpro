@@ -5,11 +5,11 @@ import { RiFlightTakeoffFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 const BannerThree = () => {
   function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return <FaArrowRight className={className} onClick={onClick} />;
   }
   function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return <FaArrowLeft className={className} onClick={onClick} />;
   }
   const settings = {

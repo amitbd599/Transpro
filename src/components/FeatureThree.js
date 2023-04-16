@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  FaBox,
-  FaMoneyBillAlt,
-  FaShieldAlt,
-  FaToolbox,
-  FaTruck,
-  FaTruckMoving,
-} from "react-icons/fa";
+import { FaBox, FaMoneyBillAlt, FaShieldAlt, FaTruck } from "react-icons/fa";
 
 const FeatureThree = () => {
   return (

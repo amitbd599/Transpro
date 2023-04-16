@@ -31,7 +31,7 @@ const Demo = () => {
         >
           <div className='container nav-container'>
             <div className='logo'>
-              <Link className='main-logo' to='/index'>
+              <Link className='main-logo' to='/'>
                 <img src='assets/demo-img/logo-white.png' alt='img' />
               </Link>
             </div>
@@ -184,7 +184,7 @@ const Demo = () => {
                         {({ isVisible }) =>
                           isVisible && (
                             <span className='counter'>
-                              <CountUp delay={0} start={0} end={3} />
+                              <CountUp delay={0} start={0} end={5} />
                             </span>
                           )
                         }
@@ -284,33 +284,38 @@ const Demo = () => {
                 </Link>
               </div>
             </div>
-
             <div className='col-lg-4 col-md-6'>
               <div
-                className='inner-item style-large wow animated fadeInUp coming-soon'
+                className='inner-item style-large wow animated fadeInUp'
                 data-wow-duration='1.5s'
                 data-wow-delay='0.4s'
               >
-                <a href='#'>
+                <Link to='/home-4'>
                   <span className='thumb'>
                     <img src='assets/demo-img/4.png' alt='img' />
                   </span>
-                  <span className='cm-soon-title'>Coming Soon Home-4</span>
-                </a>
+                  Home V.4
+                </Link>
+                <Link className='btn btn-base' to='/home-4'>
+                  Live Demo
+                </Link>
               </div>
             </div>
             <div className='col-lg-4 col-md-6'>
               <div
-                className='inner-item style-large wow animated fadeInUp coming-soon'
+                className='inner-item style-large wow animated fadeInUp'
                 data-wow-duration='1.5s'
                 data-wow-delay='0.4s'
               >
-                <a href='#'>
+                <Link to='/home-5'>
                   <span className='thumb'>
-                    <img src='assets/demo-img/4.png' alt='img' />
+                    <img src='assets/demo-img/5.png' alt='img' />
                   </span>
-                  <span className='cm-soon-title'>Coming Soon Home-5</span>
-                </a>
+                  Home V.5
+                </Link>
+                <Link className='btn btn-base' to='/home-5'>
+                  Live Demo
+                </Link>
               </div>
             </div>
           </div>

@@ -1,17 +1,5 @@
 import React from "react";
-import {
-  FaArrowRight,
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaMapMarkerAlt,
-  FaMobileAlt,
-  FaRegEnvelopeOpen,
-  FaRegPaperPlane,
-  FaTwitter,
-  FaWhatsapp,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const FooterThree = () => {

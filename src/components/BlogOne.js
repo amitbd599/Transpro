@@ -12,7 +12,7 @@ const BlogOne = () => {
             <div className='col-lg-6'>
               <div className='section-title text-center'>
                 <h4 className='subtitle'>LATEST BLOG</h4>
-                <h2 className='title'>LATEST NEWS &amp; ARTICLES</h2>
+                <h2 className='title'>LATEST NEWS & ARTICLES</h2>
                 <p className='content'>
                   Dramatically enhance interactive metrics for reliable
                   services. Proactively unleash fully researched e-commerce.

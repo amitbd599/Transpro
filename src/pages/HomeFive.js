@@ -1,18 +1,20 @@
 import React, { Fragment, Suspense } from "react";
-
 import Preloader from "../elements/Preloader";
-import NavbarFour from "../components/NavbarFour";
-import BannerFive from "../components/BannerFive";
-import SolutionThree from "../components/SolutionThree";
-import TransportServiceAreaTwo from "../components/TransportServiceAreaTwo";
-import ShipmentTwo from "../components/ShipmentTwo";
-import LogisticsTwo from "../components/LogisticsTwo";
-import ShipmentThree from "../components/ShipmentThree";
-import FeatureThree from "../components/FeatureThree";
-import TestimonialFour from "../components/TestimonialFour";
-import CompanyOne from "../components/CompanyOne";
-import FooterThree from "../components/FooterThree";
-const SigninPopup = React.lazy(() => import("../components/SigninPopup"));
+
+const NavbarFour = React.lazy(() => import("../components/NavbarFour"));
+const BannerFive = React.lazy(() => import("../components/BannerFive"));
+const SolutionThree = React.lazy(() => import("../components/SolutionThree"));
+const TransportServiceAreaTwo = React.lazy(() =>
+  import("../components/TransportServiceAreaTwo")
+);
+const LogisticsTwo = React.lazy(() => import("../components/LogisticsTwo"));
+const ShipmentThree = React.lazy(() => import("../components/ShipmentThree"));
+const FeatureThree = React.lazy(() => import("../components/FeatureThree"));
+const TestimonialFour = React.lazy(() =>
+  import("../components/TestimonialFour")
+);
+const CompanyOne = React.lazy(() => import("../components/CompanyOne"));
+const FooterThree = React.lazy(() => import("../components/FooterThree"));
 
 const HomeFive = () => {
   return (

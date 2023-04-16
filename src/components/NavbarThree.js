@@ -1,27 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
-import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { SetSearchPopUp } from "../redux/stateSlice/clickActionSlice";
-import store from "../redux/store/store";
 const NavbarThree = () => {
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState(false);
-
-  useEffect(() => {
-    window.onscroll = () => {
-      if (window.pageYOffset < 300) {
-        setActive(false);
-      } else if (window.pageYOffset > 300) {
-        setActive(true);
-      }
-      return () => (window.onscroll = null);
-    };
-  }, []);
-  const searchPopUp = useSelector((state) => state.clickAction.searchPopUp);
-  const actionSearch = () => {
-    store.dispatch(SetSearchPopUp(!searchPopUp));
-  };
 
   // Control sidebar navigation
   let items = document.querySelectorAll(".menu-item-has-children > a");
